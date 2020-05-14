@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-	font-family: $roboto;
-	color: $color;
+	font-family: $default_font;
+	color: $color_text;
 	font-size: $font-size;
 	background: #fff;
 }
@@ -11,7 +11,7 @@
 }
 
 a {
-	color: $blue;
+	color: $color_text;
 	text-decoration: none;
 
 	&:hover {
@@ -46,18 +46,6 @@ ul.ul-reset, .ul-reset ul {
 
 button {
 	cursor: pointer;
-}
-
-.text-right {
-	text-align: right;
-}
-
-.text-left {
-	text-align: left;
-}
-
-.text-center {
-	text-align: center;
 }
 
 [class*=icon-] {
