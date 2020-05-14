@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+:root {
+	font-family: $roboto;
+	color: $color;
+	font-size: $font-size;
+	background: #fff;
+}
+* {
+	outline: none;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+i {
+	font-style: normal;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+ul.ul-reset, .ul-reset ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+
+::-moz-placeholder {
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	opacity: 1;
+}
+
+
+button {
+	cursor: pointer;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+[class*=icon-] {
+	@extend %dib;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
