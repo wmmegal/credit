@@ -174,10 +174,6 @@
             &:after {
                 display: block;
                 opacity: 0.5;
-                @include media-breakpoint('767') {
-                    display: none;
-                }
-
             }
         }
 
@@ -188,9 +184,6 @@
         &:after {
             display: block;
             @extend %checkbox-tick;
-            @include media-breakpoint('767') {
-                display: block;
-            }
         }
     }
     &:hover {
@@ -234,9 +227,6 @@
             display: block;
             padding: 1rem;
             margin: -1rem;
-            @include media-breakpoint('1199') {
-                font-size: 1rem;
-            }
         }
         &:hover, &.active {
             & > a {
@@ -248,4 +238,10 @@
             border-bottom: 0;
         }
     }
+}
+
+%block {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
 }

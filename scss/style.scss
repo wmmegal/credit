@@ -8,13 +8,18 @@
 @import "extendts";
 @import "reset";
 @import "fonts";
-@import "general";
 @import "mods";
 @import "titles";
 @import "bootstrap-grid";
 @import "variables";
+@import "general";
+@import "slick";
+@import "jquery.fancybox.min";
 
 
 // blocks
+@import "btns";
 @import "header";
+@import "slider-main";
+@import "slider-products-main";
 

@@ -1,0 +1,35 @@
+#slider-main {
+    max-width: 88.5rem;
+    border-radius: 1.5rem;
+    background-color: $yellow_light;
+    margin: 0 auto;
+
+    .slide {
+        position: relative;
+        padding: 6rem 0;
+
+        .slide-title {
+            color: $dark;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 4.5rem;
+            max-width: 60%;
+            margin-bottom: 3rem;
+        }
+
+        p {
+            max-width: 50%;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        figure {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 27rem;
+        }
+    }
+}

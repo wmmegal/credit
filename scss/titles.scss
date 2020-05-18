@@ -1,6 +1,10 @@
 .title {
-    &.h1 {
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: $dark;
 
+    &.h1 {
+        font-size: 2rem;
     }
 
     &.h2 {

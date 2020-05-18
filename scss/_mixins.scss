@@ -1,6 +1,6 @@
 @mixin media-breakpoint($type) {
     $breakpoints: (
-        'xl' : '(max-width: 1199px)',
+        'xl' : '(max-width: 1300px)',
         'lg' : '(max-width: 991px)',
         'md' : '(max-width: 767px)',
         'sm' : '(max-width: 575px)',
