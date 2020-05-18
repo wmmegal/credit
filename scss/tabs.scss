@@ -1,0 +1,54 @@
+.tabs-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+
+    .tabs {
+        display: flex;
+
+        li {
+            margin-right: 2.5rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            cursor: pointer;
+
+            &.active {
+                position: relative;
+                cursor: default;
+                color: $dark;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    right: 0;
+                    height: 0.125rem;
+                    border-radius: 0.125rem;
+                    background-color: $yellow;
+                }
+            }
+
+        }
+        &.dark {
+            li {
+                &.active {
+
+                    &:before {
+                        background: rgba(21, 21, 21, 0.3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tab-content {
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+}
+
+

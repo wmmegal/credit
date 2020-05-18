@@ -17,11 +17,7 @@
         }
     }
     #slider-products-main {
-        margin: 0 -.75rem;
-
-        .slick-slide {
-            padding: 0 .75rem;
-        }
+        @extend %slider-items;
 
         .product {
             @extend %block;

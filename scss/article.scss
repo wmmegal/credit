@@ -1,0 +1,35 @@
+.article {
+    ul {
+        @extend %list-reset;
+        margin-left: 0.5rem;
+
+        li {
+           margin-bottom: 1rem;
+           padding-left: 1.5rem;
+           position: relative;
+
+           &:before {
+               content: '';
+               width: 0.5rem;
+               height: 0.5rem;
+               background: $yellow;
+               position: absolute;
+               top: 0.5rem;
+               left: 0;
+               border-radius: 50%;
+           }
+           &:last-child {
+               margin: 0;
+           }
+        }
+    }
+    p, ul, blockquote, ol {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

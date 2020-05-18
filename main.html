@@ -38,7 +38,7 @@
                     <div>
                         <div class="slide">
                             <div>
-                                <div class="slide-title">Персональный подбор кредита</div>
+                                <div class="slide-title">Персональный подбор кредита {{ i }}</div>
                                 <p>Проверь свой кредитный рейтинг и узнай, какой банк и по какой ставке одобрит тебе кредит</p>
                                 <a href="#" class="btn btn-yellow">Подобрать кредит</a>
                             </div>
@@ -120,7 +120,7 @@
             <div class="title h1">Лучшие предложения</div>
             <div class="tabs-wrap">
                 <ul class="ul-reset tabs">
-                    <li>Кредитные карты</li>
+                    <li class="active">Кредитные карты</li>
                     <li>Займы</li>
                     <li>Дебетовые карты</li>
                     <li>Карты рассрочки</li>
@@ -133,49 +133,56 @@
                     </svg>
                 </a>
             </div>
-            <div class="slider-items">
-                {% for i in range(0, 10)  %}
-                    <div>
-                        <div class="offer">
-                            <div class="offer-head">
-                                <div class="offer-title">Альфа Банк</div>
-                                <div class="offer-desc">
-                                    100 дней без процентов
-                                </div>
-                                <figure>
-                                    <img src="img/img-card.jpg" alt="">
-                                </figure>
-                                <div class="options">
-                                    <dl>
-                                        <dt>Обслуживание</dt>
-                                        <dd>1 490 ₽ в год</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Льготный период</dt>
-                                        <dd>до 100 дней</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Сумма</dt>
-                                        <dd>до 300 000 ₽</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Ставка</dt>
-                                        <dd>20%</dd>
-                                    </dl>
+            {% for i in range(0, 5)  %}
+                <div class="tab-content{% if i == 0 %} visible{% endif %}">
+                    <div class="slider-items">
+                        {% for j in range(0, 10)  %}
+                            <div>
+                                <div class="offer">
+                                    <div class="offer-head line">
+                                        <div class="offer-title">Альфа Банк {{ i }}</div>
+                                        <div class="offer-desc">
+                                            100 дней без процентов
+                                        </div>
+                                    </div>
+                                    <figure>
+                                        <img src="img/img-card.jpg" alt="" class="rounded">
+                                    </figure>
+                                    <div class="offer-options">
+                                        <dl>
+                                            <dt>Обслуживание</dt>
+                                            <dd>1 490 ₽ в год</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Льготный период</dt>
+                                            <dd>до 100 дней</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Сумма</dt>
+                                            <dd>до 300 000 ₽</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Ставка</dt>
+                                            <dd>20%</dd>
+                                        </dl>
+                                    </div>
+                                    <a href="#" class="btn btn-yellow">Подробнее</a>
                                 </div>
                             </div>
-                        </div>
+                        {% endfor %}
                     </div>
-                {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
+
+
         </div>
     </div>
     <div class="section reviews bg-yellow">
         <div class="container">
             <div class="title h1">Отзывы потребителей</div>
             <div class="tabs-wrap">
-                <ul class="ul-reset tabs">
-                    <li>Кредитные карты</li>
+                <ul class="ul-reset tabs dark">
+                    <li class="active">Кредитные карты</li>
                     <li>Займы</li>
                     <li>Дебетовые карты</li>
                     <li>Карты рассрочки</li>
@@ -183,32 +190,37 @@
                 </ul>
                 <a href="#" class="link-all">
                     <span>Все отзывы</span>
-                    <svg class="icon-arr-right">
+                    <svg class="icon-arr-right white">
                         <use xlink:href="img/symbol/sprite.svg#icon-arr-right"></use>
                     </svg>
                 </a>
             </div>
-            <div class="slider-items">
-                {% for i in range(0, 10)  %}
-                    <div>
-                        <div class="review">
-                            <figure>
-                                <img src="img/img-card-2.jpg" alt="">
-                            </figure>
-                            <div class="review-author">
-                                <span>Инна</span>
-                                <div class="stars">
-                                    {% include 'stars.html' %}
+            {% for i in range(0, 5)  %}
+                <div class="tab-content{% if i == 0 %} visible{% endif %}">
+                    <div class="slider-items">
+                        {% for j in range(0, 10)  %}
+                            <div>
+                                <div class="review">
+                                    <figure>
+                                        <img src="img/img-card-2.jpg" alt="" class="rounded">
+                                    </figure>
+                                    <div class="review-author">
+                                        <span>Инна {{ i }}</span>
+                                        <div class="stars" data-rating="3">
+                                            {% include 'stars.html' %}
+                                        </div>
+                                    </div>
+                                    <div class="review-text">
+                                        Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                                        <a href="#" class="link-read-more">Читать далее</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="review-text">
-                                Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
-                                <a href="#" class="link-read-more">Читать далее</a>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
-                {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
+
         </div>
     </div>
     <div class="section entries line">
@@ -216,7 +228,7 @@
             <div class="title h1">Полезные статьи</div>
             <div class="tabs-wrap">
                 <ul class="ul-reset tabs">
-                    <li>Все</li>
+                    <li class="active">Все</li>
                     <li>Сравнения</li>
                     <li>Бытовая аналитика</li>
                     <li>Тест-драйвы</li>
@@ -230,21 +242,27 @@
                     </svg>
                 </a>
             </div>
-            <div class="slider-items">
-                {% for i in range(0, 10)  %}
-                    <div>
-                        <div class="entry">
-                            <figure>
-                                <img src="img/img-news.jpg" alt="">
-                            </figure>
-                            <a href="#" class="entry-title">Рецессия или стагнация? Насколько хорошо вы разбираетесь в кризисе</a>
-                        </div>
+            {% for i in range(0, 6)  %}
+                <div class="tab-content{% if i == 0 %} visible{% endif %}">
+                    <div class="slider-items">
+                        {% for j in range(0, 10)  %}
+                            <div>
+                                <a href="#" class="entry">
+                                    <figure>
+                                        <img src="img/img-news.jpg" alt="" class="rounded">
+                                    </figure>
+                                    <span class="entry-title">Рецессия или стагнация? Насколько хорошо вы разбираетесь в кризисе {{ i }}</span>
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
-                {% endfor %}
-            </div>
+                </div>
+
+            {% endfor %}
+
         </div>
     </div>
-    <div class="section entries line">
+    <div class="section line">
         <div class="container">
             <div class="title h1">Часто ищут</div>
             <div class="row">

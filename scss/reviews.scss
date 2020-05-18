@@ -1,0 +1,27 @@
+.reviews {
+    .review {
+        @extend %block;
+
+        figure {
+            margin-bottom: 1rem;
+        }
+
+        &-author {
+            @extend %flex-inline;
+            margin-bottom: 0.5rem;
+
+            span {
+                font-weight: 500;
+                color: $dark;
+            }
+        }
+        &-text {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+
+            .link-read-more {
+                color: $dark;
+            }
+        }
+    }
+}

@@ -1,10 +1,8 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
     /**
      * Слайдер на главной
      */
-
-    //slider
     $('#single-slider').slick({
         dots: false,
         arrows: true,
@@ -12,6 +10,10 @@ jQuery(document).ready(function($) {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
+        cssEase: 'linear',
         responsive: [
             {
                 breakpoint: 1300,
@@ -22,6 +24,9 @@ jQuery(document).ready(function($) {
         ]
     });
 
+    /**
+     * Слайдер продуктов на главной
+     */
     $('#slider-products-main').slick({
         dots: false,
         arrows: true,
@@ -32,16 +37,47 @@ jQuery(document).ready(function($) {
         appendArrows: $('.slider-products-arrows')
     });
 
-    // $('.arr-prev').on('click', function (e) {
-    //     e.preventDefault();
-    //     $('.single-slider').slick('slickPrev');
-    // });
-    // $('.arr-next').on('click', function (e) {
-    //     e.preventDefault();
-    //     $('.single-slider').slick('slickNext');
-    // });
 
+    /**
+     * Слайдер элементов
+     */
+    let sliderItems = $('.slider-items'),
+        sliderItemsSettings = {
+            dots: false,
+            arrows: true,
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        arrows: false,
+                        dots: true
+                    }
+                },
+            ]
+        }
 
+    sliderItems.slick(sliderItemsSettings);
+
+    /**
+     * Табы
+     */
+    $('.tabs').on('click', 'li:not(.active)', function () {
+        let $thisTab = $(this).addClass('active').siblings().removeClass('active').closest('.container').find('.tab-content').eq($(this).index());
+
+        let sliderItems = $thisTab.find('.slider-items');
+
+        $thisTab.fadeIn(150).siblings('.tab-content').hide();
+
+        if (sliderItems.length) {
+            sliderItems.slick('unslick');
+            sliderItems.slick(sliderItemsSettings)
+        }
+
+    });
 
 });
 

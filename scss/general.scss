@@ -71,14 +71,11 @@ button {
     width: 1rem;
     height: 0.72rem;
 
-    @include media-breakpoint('xl') {
-        display: none;
-    }
-
     &.slick-prev {
         background: url("../img/icon-arr-slide.svg") no-repeat top;
         left: -2.5rem;
-        transform: rotate(-180deg);
+        transform: rotate(180deg);
+        margin-top: -2px;
     }
 
     &.slick-next {
@@ -96,4 +93,69 @@ button {
     padding: 4rem 0;
 }
 
+.link-all {
+    font-size: 0;
 
+    span {
+        @extend %dib;
+        color: $dark;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-right: 0.5rem;
+    }
+
+    .icon-arr-right {
+        width: 0.5rem;
+        height: 0.75rem;
+        fill: $yellow;
+
+        &.white {
+            fill: #FFF;
+        }
+    }
+}
+
+.slider-items {
+    @extend %slider-items;
+}
+
+.slick-dots {
+    @extend %slick-dots;
+}
+
+.bg-yellow {
+    .slick-dots {
+        li {
+
+            &:hover, &.slick-active {
+                button {
+                    background-color: $dark;
+                }
+            }
+        }
+    }
+}
+
+.ul-reset.list {
+    margin-bottom: 1.5rem;
+
+    li {
+        margin-bottom: 1rem;
+
+
+        &:hover, &.active {
+            a {
+                color: $dark;
+                text-decoration: underline;
+            }
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &:last-child {
+        margin: 0;
+    }
+}

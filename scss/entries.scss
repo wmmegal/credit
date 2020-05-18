@@ -1,0 +1,14 @@
+.entries {
+    .entry {
+        figure {
+            margin-bottom: 1rem;
+        }
+        &-title {
+            display: block;
+            color: $dark;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+    }
+}

@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 // general
-
 @import "sprite";
-
 @import "mixins";
 @import "extendts";
 @import "reset";
@@ -18,8 +16,15 @@
 
 
 // blocks
+@import "stars";
 @import "btns";
 @import "header";
 @import "slider-main";
 @import "slider-products-main";
+@import "tabs";
+@import "offers";
+@import "reviews";
+@import "entries";
+@import "article";
+@import "footer";
 

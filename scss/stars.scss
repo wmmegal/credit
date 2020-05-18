@@ -7,7 +7,7 @@
         margin-right: 0.25rem;
 
         &.icon-star {
-            fill: #e5eaf1;
+            fill: $border;
         }
 
         &:last-child {
@@ -29,7 +29,7 @@
             @for $i from 1 through $j {
                 svg {
                     &:nth-child(#{$i}) {
-                        fill: $orange;
+                        fill: $yellow;
                     }
                 }
             }

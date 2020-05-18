@@ -47,3 +47,15 @@
     height: 100%;
     object-fit: cover;
 }
+
+.line {
+    border-bottom: 1px solid $border;
+}
+
+.rounded {
+    border-radius: $rounded;
+}
+
+.font-medium {
+    font-weight: 500;
+}

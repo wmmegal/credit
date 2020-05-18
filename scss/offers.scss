@@ -1,0 +1,60 @@
+.offers {
+    .offer {
+        @extend %block;
+        position: relative;
+
+        &-head {
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            .offer-title {
+                color: $dark;
+                font-size: 1.125rem;
+                font-weight: 500;
+                line-height: 1.5rem;
+            }
+
+            .offer-desc {
+                font-size: 0.75rem;
+            }
+        }
+
+        figure {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 4rem;
+
+        }
+
+        &-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            dl {
+                width: 45%;
+                margin-bottom: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+
+                dt {
+                    width: 100%;
+                    font-size: 0.75rem;
+                    order: 1;
+                }
+                dd {
+                    width: 100%;
+                    color: $dark;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 1.5rem;
+                    order: 0;
+                }
+            }
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+}
