@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 // general
+
 @import "sprite";
-@import "variables";
+
 @import "mixins";
 @import "extendts";
 @import "reset";
@@ -10,6 +11,9 @@
 @import "general";
 @import "mods";
 @import "titles";
+@import "bootstrap-grid";
+@import "variables";
+
 
 // blocks
 @import "header";

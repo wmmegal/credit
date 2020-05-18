@@ -119,7 +119,7 @@
 %checkbox-tick {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: $blue;
+    background-color: $yellow;
 }
 
 %checkbox {
@@ -240,7 +240,7 @@
         }
         &:hover, &.active {
             & > a {
-                color: $blue;
+                color: $yellow;
             }
         }
 
