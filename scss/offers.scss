@@ -11,6 +11,7 @@
                 color: $dark;
                 font-size: 1.125rem;
                 font-weight: 500;
+                display: block;
                 line-height: 1.5rem;
             }
 
@@ -55,6 +56,24 @@
         }
         .btn {
             width: 100%;
+        }
+        &.v-2 {
+            figure {
+                height: 9.25rem;
+                border-radius: $rounded;
+                border: 0.063rem solid $border;
+                position: static;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+            }
+
+            .offer-head {
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
         }
     }
 }
