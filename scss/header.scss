@@ -41,9 +41,10 @@
 
         #nav {
             @include media-breakpoint('xl') {
+                border-top: 1px solid $border;
+                display: none;
                 margin: 0 -5vw;
                 padding: 1.5rem 0;
-                border-top: 1px solid $border;
                 opacity: 0;
                 visibility: hidden;
             }
@@ -120,6 +121,8 @@
                 transform: none;
                 border-left: 0;
                 height: 3.563rem;
+                opacity: 0;
+                visibility: hidden;
             }
 
             .icon-search {
@@ -153,11 +156,12 @@
     &.show-menu {
         .container {
             #nav {
-                opacity: 1;
-                visibility: visible;
+                @extend %visible;
             }
 
             #quick-search {
+                @extend %visible;
+
                 .btn-show-search {
                     display: none;
                 }

@@ -1,0 +1,27 @@
+.nav-links {
+    border: 1px solid $border;
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    a, span {
+        width: 4rem;
+        height: 4rem;
+        border-right: 1px solid $border;
+        font-size: 1rem;
+        font-weight: 500;
+        @extend %flex-el-center;
+        @include media-breakpoint('xl') {
+            flex: auto;
+            height: 3rem;
+            font-size: 0.875rem;
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+    a:hover, span {
+        color: rgba(21, 21, 21, 0.3);
+    }
+}

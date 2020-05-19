@@ -101,6 +101,15 @@ button {
     @include media-breakpoint('xl') {
         padding: 1.5rem 0;
     }
+    > .container {
+        > .btn {
+            display: none;
+            @include media-breakpoint('xl') {
+                display: block;
+                margin-top: 1.5rem;
+            }
+        }
+    }
 }
 
 .link-all {
@@ -172,5 +181,15 @@ button {
 
     &:last-child {
         margin: 0;
+    }
+}
+
+.breadcrumbs {
+    margin-top: -2rem;
+    font-size: 0.875rem;
+
+    @include media-breakpoint('xl') {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
     }
 }

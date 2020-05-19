@@ -252,3 +252,9 @@
         padding:.75rem;
     }
 }
+
+%flex-el-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
