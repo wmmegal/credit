@@ -46,6 +46,9 @@ ul.ul-reset, .ul-reset ul {
 
 #page {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 button {
@@ -101,6 +104,7 @@ button {
     @include media-breakpoint('xl') {
         padding: 1.5rem 0;
     }
+
     > .container {
         > .btn {
             display: none;
@@ -191,5 +195,21 @@ button {
     @include media-breakpoint('xl') {
         margin-top: 0;
         margin-bottom: 0.5rem;
+    }
+}
+
+.link-back {
+    font-size: 0;
+
+    .icon-arr-back-yellow {
+        fill: $yellow;
+    }
+
+    span {
+        @extend %dib;
+        color: $dark;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-left: 0.75rem;
     }
 }

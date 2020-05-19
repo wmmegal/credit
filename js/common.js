@@ -55,13 +55,15 @@ jQuery(document).ready(function ($) {
     });
 
     quickSearch.find('input').on('blur', function (e) {
+        let $this = $(this);
+
         setTimeout(function () {
             quickSearch.removeClass('active');
-            $(this).closest('form').find('.search-results').removeClass('active');
+            $this.closest('form').find('.search-results').removeClass('active');
         }, 1)
     });
 
-    quickSearch.find('input').on('input', function (e) {
+    quickSearch.find('input').on('focus', function (e) {
         $(this).closest('form').find('.search-results').addClass('active');
     });
 

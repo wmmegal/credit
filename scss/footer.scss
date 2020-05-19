@@ -1,6 +1,7 @@
 #footer {
     border-top: 1px solid $border;
     padding-top: 2.5rem;
+    margin-top: auto;
     @include media-breakpoint('xl') {
         padding-top: 1.5rem;
 
@@ -23,6 +24,7 @@
         color: rgba(21, 21, 21, 0.35);
         @include media-breakpoint('xl') {
             font-size: 0.875rem;
+            margin-top: 1.5rem;
         }
     }
 }

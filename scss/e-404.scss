@@ -1,0 +1,43 @@
+#e-404 {
+    text-align: center;
+
+    .e-404 {
+        position: relative;
+
+        .e-404-text {
+            font-size: 15rem;
+            font-weight: 500;
+            line-height: 1;
+            color: $yellow;
+            @include media-breakpoint('xl') {
+                font-size: 10rem;
+            }
+        }
+
+        .e-404-error {
+            @include center-xy;
+            color: $dark;
+            font-size: 2.5rem;
+            font-weight: 500;
+            @include media-breakpoint('xl') {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    p {
+        color: $dark;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+        @include media-breakpoint('xl') {
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+
+            br {
+                display: none;
+            }
+        }
+    }
+}

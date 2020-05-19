@@ -14,5 +14,13 @@
             font-weight: 500;
             line-height: 1.5rem;
         }
+        &.v-2 {
+            figure {
+                height: 16rem;
+                @include media-breakpoint('xl') {
+                    height: auto;
+                }
+            }
+        }
     }
 }
