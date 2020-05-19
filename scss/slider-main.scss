@@ -3,10 +3,17 @@
     border-radius: 1.5rem;
     background-color: $yellow_light;
     margin: 0 auto;
+    @include media-breakpoint('xl') {
+        border-radius: 0;
+    }
 
     .slide {
         position: relative;
         padding: 6rem 0;
+        @include media-breakpoint('xl') {
+            padding: 1.5rem 0 0 0;
+            text-align: center;
+        }
 
         .slide-title {
             color: $dark;
@@ -15,6 +22,12 @@
             line-height: 4.5rem;
             max-width: 60%;
             margin-bottom: 3rem;
+            @include media-breakpoint('xl') {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 2rem;
+                max-width: initial;
+            }
         }
 
         p {
@@ -22,6 +35,12 @@
             font-size: 1.5rem;
             line-height: 2.5rem;
             margin-bottom: 2.5rem;
+            @include media-breakpoint('xl') {
+                max-width: 100%;
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                margin-bottom: 1rem;
+            }
         }
 
         figure {
@@ -30,6 +49,16 @@
             right: 0;
             bottom: 0;
             width: 27rem;
+            @include media-breakpoint('xl') {
+                width: auto;
+                position: static;
+                text-align: center;
+
+                img {
+                    max-width: 13.75rem;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 }

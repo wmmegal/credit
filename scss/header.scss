@@ -1,20 +1,77 @@
 #header {
+    position: relative;
+    z-index: 11;
+
     .container {
         @extend %flex-inline;
         padding: 2rem 3.75rem 2rem 0;
         position: relative;
+        @include media-breakpoint('xl') {
+            padding: 0;
+            display: block;
+
+            .logo {
+                width: 12.125rem;
+                padding: 0.5rem 0;
+            }
+        }
+
+
+        .btn-menu {
+            display: none;
+            position: absolute;
+            top: 1.5rem;
+            right: 0;
+
+            @include media-breakpoint('xl') {
+                display: block;
+            }
+
+            .icon-burger {
+                @include burger(24px, 2px, 4px, $dark, 2px);
+                margin: 0 auto;
+            }
+
+            &.active {
+                .icon-burger {
+                    @include burger-to-cross;
+                }
+            }
+        }
 
         #nav {
+            @include media-breakpoint('xl') {
+                margin: 0 -5vw;
+                padding: 1.5rem 0;
+                border-top: 1px solid $border;
+                opacity: 0;
+                visibility: hidden;
+            }
+
             > ul {
                 display: flex;
+                flex-wrap: wrap;
 
                 > li {
                     margin-left: 2rem;
+                    position: relative;
+                    @include media-breakpoint('xl') {
+                        margin-left: 0;
+                        margin-bottom: 1.5rem;
+                        width: 100%;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
 
                     > a {
                         font-weight: 500;
                         color: $dark;
                         font-size: 1rem;
+                        @include media-breakpoint('xl') {
+                            padding: 0 5vw;
+                        }
 
                         .icon-arr {
                             width: 0.75rem;
@@ -23,25 +80,86 @@
                             position: relative;
                             margin-left: 0.25rem;
                             top: -1px;
+                            @include media-breakpoint('xl') {
+                                display: none;
+                            }
                         }
+                    }
+
+                    &.active {
+                        & > a {
+                            .icon-arr {
+                                transform: rotate(180deg);
+                            }
+                        }
+
+                        ul {
+                            @extend %visible;
+                        }
+                    }
+
+                    ul {
+                        width: 10.5rem;
+                        @extend %drop-list;
+                        @extend %hidden;
                     }
                 }
             }
         }
+
         #quick-search {
             @include center-y;
             right: 0;
             height: 2.5rem;
             border-left: 1px solid $border;
+            width: 2.5rem;
+            transition: $transition;
+            overflow: hidden;
+            @include media-breakpoint('xl') {
+                position: static;
+                transform: none;
+                border-left: 0;
+                height: 3.563rem;
+            }
+
+            .icon-search {
+                fill: $yellow;
+            }
 
             .btn-show-search {
                 height: 2.5rem;
                 padding-left: 1.25rem;
+                position: absolute;
+                @include center-y;
+                right: 0;
+                z-index: 10;
+            }
 
-                .icon-search {
-                    width: 1rem;
-                    height: 1rem;
-                    fill: $yellow;
+            &.active {
+                overflow: visible;
+                width: calc(100% - 260px);
+
+                .btn-show-search {
+                    display: none;
+                }
+
+                [type=submit], [type=button]:not(.btn-show-search) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.show-menu {
+        .container {
+            #nav {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            #quick-search {
+                .btn-show-search {
+                    display: none;
                 }
             }
         }

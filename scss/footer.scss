@@ -1,6 +1,13 @@
 #footer {
     border-top: 1px solid $border;
     padding-top: 2.5rem;
+    @include media-breakpoint('xl') {
+        padding-top: 1.5rem;
+
+        .logo {
+            max-width: 12.125rem;
+        }
+    }
 
     .font-medium {
         li {
@@ -14,5 +21,8 @@
         padding: 1.5rem 0;
         border-top: 1px solid $border;
         color: rgba(21, 21, 21, 0.35);
+        @include media-breakpoint('xl') {
+            font-size: 0.875rem;
+        }
     }
 }

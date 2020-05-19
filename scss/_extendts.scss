@@ -207,24 +207,25 @@
 %drop-list {
     position: absolute;
     right: 0;
-    top: calc(100% + .5rem);
-    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.04);
-    border-radius: 0.25rem;
+    top: calc(100% + 1.5rem);
+    box-shadow: 0 $rounded 1rem $border;
+    border-radius: $rounded;
     background-color: #ffffff;
+    overflow: hidden;
 
     & > li {
         font-size: 0.875rem;
-        padding: 1rem;
-        border-bottom: 1px solid #e8e8e8;
+        padding: 0.75rem 1rem;
 
         & > a {
             display: block;
-            padding: 1rem;
-            margin: -1rem;
+            padding: 0.75rem 1rem;
+            margin: -0.75rem -1rem;
         }
         &:hover, &.active {
+            background: #f8f8f8;
             & > a {
-                color: $yellow;
+                color: $dark;
             }
         }
 
@@ -238,12 +239,16 @@
     padding: 1.5rem;
     background: #fff;
     border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    @include media-breakpoint('xl') {
+        padding: 1rem;
+    }
 }
 
 %slider-items {
-    margin: 0 -.75rem;
+    margin: -.75rem;
 
     .slick-slide {
-        padding: 0 .75rem;
+        padding:.75rem;
     }
 }

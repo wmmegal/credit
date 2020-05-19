@@ -4,6 +4,10 @@
 
         figure {
             margin-bottom: 1rem;
+            height: 9.25rem;
+            @include media-breakpoint('xl') {
+                height: auto;
+            }
         }
 
         &-author {

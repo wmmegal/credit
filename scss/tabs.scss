@@ -2,15 +2,27 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.5rem;
+    @include media-breakpoint('xl') {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
 
     .tabs {
         display: flex;
+        @include media-breakpoint('xl') {
+            overflow: auto;
+            padding-bottom: 2px;
+        }
 
         li {
             margin-right: 2.5rem;
             font-weight: 500;
             line-height: 1.5rem;
             cursor: pointer;
+            @include media-breakpoint('xl') {
+                white-space: nowrap;
+                margin-right: 1.5rem;
+            }
 
             &.active {
                 position: relative;
@@ -39,6 +51,11 @@
                     }
                 }
             }
+        }
+    }
+    .link-all {
+        @include media-breakpoint('xl') {
+            display: none;
         }
     }
 }

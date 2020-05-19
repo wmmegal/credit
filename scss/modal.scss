@@ -1,0 +1,16 @@
+.fancybox-bg {
+    background: rgba(21, 21, 21, 0.3);
+}
+
+.modal {
+    display: none;
+    width: 20rem;
+    box-shadow: 0 $rounded 1rem $border;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+
+    &#policy {
+        width: 40.5rem;
+    }
+}
