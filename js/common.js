@@ -233,11 +233,11 @@ jQuery(document).ready(function ($) {
             animate: "fast",
             min, max, value,
             slide: function (event, ui) {
-                $input.val(ui.value);
+                $input.val(ui.value + ' ' + $join);
             }
         });
 
-        $input.val($this.slider('value'));
+        $input.val($this.slider('value') + ' ' + $join);
 
     })
 });
