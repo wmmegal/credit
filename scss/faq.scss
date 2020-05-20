@@ -11,6 +11,9 @@
             position: relative;
             font-size: 1.25rem;
             cursor: pointer;
+            @include media-breakpoint('xl') {
+                font-size: 1rem;
+            }
 
             .icon-arr-down {
                 position: absolute;
@@ -18,6 +21,9 @@
                 left: 0.5rem;
                 fill: $yellow;
                 transition: $transition;
+                @include media-breakpoint('xl') {
+                    top: 0.25rem;
+                }
             }
 
             &.active {

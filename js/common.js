@@ -239,6 +239,9 @@ jQuery(document).ready(function ($) {
 
         $input.val($this.slider('value') + ' ' + $join);
 
+        $input.on('input', function () {
+            $this.slider('value', $(this).val());
+        });
     })
 });
 
