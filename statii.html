@@ -40,12 +40,7 @@
 
                 {% endfor %}
             </div>
-            <div class="nav-links">
-                <span>1</span>
-                {% for i in range(2, 6)  %}
-                    <a href="#">{{ i }}</a>
-                {% endfor %}
-            </div>
+            {% include 'nav-links.html' %}
         </div>
     </main>
     {% include 'footer.html' %}

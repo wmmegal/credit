@@ -1,0 +1,143 @@
+#filter {
+    max-width: 88.5rem;
+    border-radius: 1.5rem;
+    background-color: $yellow_light;
+    margin: 0 auto;
+    width: 100%;
+    @include media-breakpoint('xl') {
+        border-radius: 0;
+    }
+
+    .container {
+        padding: 6rem 0;
+        @include media-breakpoint('xl') {
+            padding: 1.5rem 0;
+        }
+    }
+
+    .filter-title {
+        color: $dark;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.5rem;
+        margin-bottom: 2.5rem;
+        max-width: 36rem;
+        @include media-breakpoint('xl') {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    .filter-form {
+        .filter-types {
+            margin-bottom: 1.5rem;
+            display: flex;
+            @include media-breakpoint('xl') {
+                display: none;
+            }
+
+            label {
+                position: relative;
+
+                input {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                span {
+                    display: block;
+                    padding: 0.75rem 1.5rem;
+                    background: #fff;
+                    line-height: 1.5rem;
+                    cursor: pointer;
+                    font-weight: 500;
+                }
+                input:checked + span {
+                    background: $yellow;
+                    color: $dark;
+                }
+            }
+        }
+
+        .filter-row {
+            display: flex;
+            margin-bottom: 1.75rem;
+            @include media-breakpoint('xl') {
+                display: block;
+            }
+        }
+
+        .filter-input {
+            width: 18rem;
+            margin-right: 1.5rem;
+            position: relative;
+            font-size: 0;
+            @include media-breakpoint('xl') {
+                margin-bottom: 1rem;
+                width: 100%;
+
+                &:last-child {
+                    padding-right: 5.5rem;
+                }
+            }
+
+            .form-field {
+                margin-bottom: 0;
+            }
+
+            .select-wrap  {
+                width: 5rem;
+                position: absolute;
+                right: -6.5rem;
+                bottom: 0;
+
+                @include media-breakpoint('xl') {
+                    right: 0;
+                }
+            }
+        }
+
+        .btn-extra-options {
+            @extend %dib;
+            margin-left: 1.25rem;
+            @include media-breakpoint('xl') {
+                display: block;
+                margin: 1rem 0 0 0;
+                width: 100%;
+            }
+            span {
+                @extend %dib;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            .icon-arr-down {
+                fill: $yellow;
+            }
+
+        }
+
+        .btn {
+            @include media-breakpoint('xl') {
+                width: 100%;
+            }
+        }
+    }
+
+
+    figure {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 27rem;
+        @include media-breakpoint('xl') {
+            display: none;
+        }
+    }
+}

@@ -117,7 +117,7 @@
                         {% for j in range(0, 10)  %}
                             <div>
                                 {% if i == 1 %}
-                                    <div class="offer v-2">
+                                    <div class="offer v-2 shadow">
                                         <figure>
                                             <a href="#"><img src="img/img-credit.jpg" alt=""></a>
                                         </figure>
@@ -145,7 +145,7 @@
                                         <a href="#" class="btn btn-yellow">Подробнее</a>
                                     </div>
                                     {% else %}
-                                        <div class="offer">
+                                        <div class="offer shadow">
                                             <div class="offer-head line">
                                                 <a href="#" class="offer-title">Альфа Банк {{ i }}</a>
                                                 <div class="offer-desc">
@@ -155,6 +155,12 @@
                                             <figure>
                                                 <img src="img/img-card.jpg" alt="" class="rounded">
                                             </figure>
+                                            <div class="stickers">
+                                                <div class="sticker red">
+                                                    Бесплатная доставка
+                                                </div>
+                                            </div>
+
                                             <div class="offer-options">
                                                 <dl>
                                                     <dt>Обслуживание</dt>
@@ -207,7 +213,7 @@
                     <div class="slider-items">
                         {% for j in range(0, 10)  %}
                             <div>
-                                <div class="review">
+                                <div class="review shadow">
                                     <figure>
                                         <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
                                     </figure>

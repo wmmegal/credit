@@ -181,6 +181,65 @@ jQuery(document).ready(function ($) {
 
     });
 
+
+    /**
+     * Селект
+     */
+    $('select').styler();
+
+    /**
+     * Дроп списки
+     */
+    $(document).on('click', '.btn-drop-toggle', function () {
+        $(this).toggleClass('active');
+        $(this).closest('div').siblings().find('.drop-list');
+        $(this).closest('div').find('.drop-list').toggleClass('active');
+    });
+
+    $(document).on('click input', function (event) {
+        if (check_drop_list($(event.target))) return;
+        $('.drop-list').removeClass('active');
+        $('.btn-drop-toggle').removeClass('active');
+        event.stopPropagation();
+    });
+
+    function check_drop_list(el) {
+        return el.hasClass("btn-drop-toggle") || el.closest('.btn-drop-toggle').length || el.is('input') || el.closest('.drop-list').length;
+    }
+
+    /**
+     * Аккордион
+     */
+    $('.question').on('click', function () {
+        let thisParent = $(this).closest('.faq'),
+            otherParents = thisParent.siblings();
+        otherParents.find('.question').removeClass('active').next('.answer').slideUp();
+        thisParent.find('.question').toggleClass('active').next('.answer').slideToggle();
+    });
+
+    /**
+     * Ползунок в инпутах
+     */
+    $('.input-slider').each(function () {
+        let $this = $(this),
+            $input = $this.closest('.with-slider').find('input'),
+            min = $this.data('min'),
+            max = $this.data('max'),
+            value = $this.data('value'),
+            $join = $this.data('join');
+
+        $this.slider({
+            range: 'min',
+            animate: "fast",
+            min, max, value,
+            slide: function (event, ui) {
+                $input.val(ui.value);
+            }
+        });
+
+        $input.val($this.slider('value'));
+
+    })
 });
 
 /**

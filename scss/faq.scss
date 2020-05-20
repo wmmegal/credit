@@ -1,0 +1,37 @@
+#faq {
+
+    .faq {
+        border-bottom: 1px solid $border;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+
+        .question {
+            color: $dark;
+            padding: 0 0 0 2rem;
+            position: relative;
+            font-size: 1.25rem;
+            cursor: pointer;
+
+            .icon-arr-down {
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                fill: $yellow;
+                transition: $transition;
+            }
+
+            &.active {
+                cursor: default;
+
+                .icon-arr-down {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .answer {
+            padding: 1rem 0 0 2rem;
+            display: none;
+        }
+    }
+}

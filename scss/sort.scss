@@ -1,0 +1,18 @@
+#sort {
+    position: relative;
+    z-index: 10;
+    display: flex;
+
+    .sort-item {
+        position: relative;
+
+        > span {
+            font-weight: 500;
+        }
+        .btn-drop-toggle {
+            color: $dark;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+}

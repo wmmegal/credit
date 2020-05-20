@@ -18,6 +18,10 @@
     background: $yellow_light;
 }
 
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
 .pd-1 {
     padding: 1rem;
 }
@@ -27,11 +31,11 @@
 }
 
 .mb-1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
 }
 
 .mb-2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem !important;
 }
 
 .mb-3 {
@@ -111,4 +115,24 @@
 
 .max-width-808 {
     max-width: 808px !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.shadow {
+    box-shadow: $shadow;
+}
+
+.border {
+    border: 1px solid $border;
+}
+
+.visible-xl {
+    display: none !important;
+
+    @include media-breakpoint('xl') {
+        display: block !important;
+    }
 }
