@@ -84,6 +84,9 @@
                 &:last-child {
                     padding-right: 5.5rem;
                 }
+                &.no-select {
+                    padding-right: 0;
+                }
             }
 
             .form-field {
@@ -103,6 +106,33 @@
 
                 @include media-breakpoint('xl') {
                     right: 0;
+                }
+            }
+        }
+
+        .filter-detail {
+            font-weight: 500;
+            line-height: 1.5rem;
+            width: 18rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 1.5rem;
+            @include media-breakpoint('xl') {
+                margin-right: 0;
+                width: 100%;
+            }
+
+            dl {
+                font-weight: 500;
+                display: flex;
+                width: 100%;
+                margin-bottom: 0.5rem;
+
+                dd {
+                    color: $dark;
+                }
+                dt, dd {
+                    width: 50%;
                 }
             }
         }

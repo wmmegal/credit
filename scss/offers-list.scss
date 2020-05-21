@@ -12,6 +12,7 @@
             @include media-breakpoint('xl') {
                 height: auto;
                 margin-bottom: 0.5rem;
+                min-height: 9rem;
             }
         }
 
@@ -52,6 +53,14 @@
                 dd {
                     color: $dark;
                     font-weight: 500;
+
+                    img {
+                        margin-right: 1rem;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
                 }
                 &.v-2 {
                     color: rgba(21, 21, 21, 0.3);
