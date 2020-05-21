@@ -1,0 +1,24 @@
+#card-reviews {
+    background: $yellow_light;
+    padding: 4rem 0 2rem 0;
+    @include media-breakpoint('xl') {
+        padding-top: 2rem;
+    }
+
+    .rating {
+        margin-bottom: 1.5rem;
+
+        span {
+            margin-right: 1rem;
+            margin-left: 0;
+        }
+    }
+
+    figure {
+        height: 11rem;
+        border-radius: $rounded;
+        border: 0.063rem solid $border;
+        background-color: #ffffff;
+        @extend %flex-el-center;
+    }
+}

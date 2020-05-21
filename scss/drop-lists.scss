@@ -15,11 +15,14 @@
     @extend %drop-list;
     @extend %hidden;
     width: 11.5rem;
+    left: 0;
+    right: auto;
 
     li {
         font-size: 1rem;
     }
     &.active {
         @extend %visible;
+        z-index: 10;
     }
 }

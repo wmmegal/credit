@@ -2,9 +2,18 @@
     position: relative;
     z-index: 10;
     display: flex;
+    @include media-breakpoint('xl') {
+        flex-wrap: wrap;
+        margin-bottom: 1px !important;
+    }
 
     .sort-item {
         position: relative;
+        margin-right: 3rem;
+        @include media-breakpoint('xl') {
+            margin: 0 0 1rem 0;
+            width: 100%;
+        }
 
         > span {
             font-weight: 500;
@@ -13,6 +22,14 @@
             color: $dark;
             font-size: 1rem;
             font-weight: 500;
+        }
+
+        .drop-list {
+            top: calc(100% + 0.5rem);
+        }
+
+        &:last-child {
+            margin-right: 0;
         }
     }
 }

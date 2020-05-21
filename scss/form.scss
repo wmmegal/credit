@@ -37,4 +37,8 @@
             border: 0.063rem solid $border;
         }
     }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
