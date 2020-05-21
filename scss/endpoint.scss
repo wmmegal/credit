@@ -106,10 +106,39 @@
 
     .table-wrap {
         table {
+            thead {
+                @include media-breakpoint('xl') {
+                    display: none;
+                }
+            }
+            tbody {
+                @include media-breakpoint('xl') {
+                    display: block;
+                }
+                tr {
+                    @include media-breakpoint('xl') {
+                        display: block;
+                        border-bottom: 1px solid $border;
+                        padding-bottom: 0.75rem;
+                        margin-bottom: 0.75rem;
+
+                    }
+                }
+            }
             th, td {
                 width: 50%;
                 @include media-breakpoint('xl') {
                     font-size: 0.875rem;
+                    border-bottom: 0;
+                    display: block;
+                    width: auto;
+                    padding: 0;
+                    margin-bottom: 0.25rem;
+                    line-height: 1.5rem;
+
+                    &:last-child {
+                        color: $dark;
+                    }
                 }
             }
         }
