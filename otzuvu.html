@@ -9,83 +9,91 @@
 <body>
 <div id="page">
     {% include 'header.html' %}
-    <main id="main">
-        <section id="card-reviews">
-            <div class="container">
+    <main id="main" class="section container">
+        <div class="row">
+            <div class="col-md-9">
                 <div class="breadcrumbs mb-1">
                     <a href="#">Главная</a>
                     <i class="sep">-</i>
                     Статьи
                 </div>
-                <div class="row">
-                    <div class="col-md-3 mb-1-xl">
-                        <figure>
-                            <img src="img/img-credit.jpg" alt="">
-                        </figure>
+                <div class="title h1">Отзывы потребителей</div>
+                <div id="sort" class="mb-2">
+                    <div class="sort-item">
+                        <button type="button" class="btn-drop-toggle">
+                            <span>Все продукты</span>
+                            <svg class="icon-arr-down">
+                                <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="ul-reset drop-list">
+                            <li><a href="#">Сначала полезные</a></li>
+                            <li><a href="#">Новые</a></li>
+                            <li><a href="#">Проверенные</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-6 mb-2-xl">
-                        <h1 class="title h1">Отзывы о CreditPlus</h1>
-                        <div class="rating">
-                            <span>Рейтинг <b>1.8</b> на основе 8 отзывов</span>
-                            <div class="stars" data-rating="3">
-                                {% include 'stars.html' %}
-                            </div>
-                        </div>
-                        <div class="article">
-                            <p>На странице размещены максимально объективные отзывы клиентов о работе Moneyman (Манимен). Описаны ситуации должников – есть ли реструктуризация долга, что будет если не платить, подают ли в суд, приезжают ли коллекторы.</p>
-                        </div>
+                    <div class="sort-item">
+                        <button type="button" class="btn-drop-toggle">
+                            <span>Сначала полезные</span>
+                            <svg class="icon-arr-down">
+                                <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="ul-reset drop-list">
+                            <li><a href="#">Сначала полезные</a></li>
+                            <li><a href="#">Новые</a></li>
+                            <li><a href="#">Проверенные</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-3">
-                        <form action="" class="filter-form">
-                            <div class="filter-input mb-2 with-slider">
-                                <label class="form-field">
-                                    <span class="label">Желаемый лимит</span>
-                                    <input type="text" name="credit_limit" value="48 000">
-                                </label>
-                                <div class="input-slider" data-min="1000" data-max="100000" data-value="20000"
-                                     data-join="₽"></div>
-                            </div>
-                            <button type="button" class="btn btn-yellow all-space">Оформить займ</button>
-                        </form>
+                    <div class="sort-item">
+                        <button type="button" class="btn-drop-toggle">
+                            <span>Все оценки</span>
+                            <svg class="icon-arr-down">
+                                <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="ul-reset drop-list">
+                            <li><a href="#">Сначала полезные</a></li>
+                            <li><a href="#">Новые</a></li>
+                            <li><a href="#">Проверенные</a></li>
+                        </ul>
                     </div>
+                    <form action="" class="quick-search-form">
+                        <input type="text" placeholder="Название банка или организации" name="s">
+                        <button type="submit">
+                            <svg class="icon-search">
+                                <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                        <button type="button">
+                            <svg class="icon-cross">
+                                <use xlink:href="img/symbol/sprite.svg#icon-cross"></use>
+                            </svg>
+                        </button>
+                        <ul class="ul-reset search-results">
+                            <li><a href="#">Дизайн сайта</a></li>
+                            <li><a href="#">Дизайн мобильного приложения </a></li>
+                            <li><a href="#">Дизайн буклетов</a></li>
+                            <li><a href="#">Дизайн интерьера</a></li>
+                        </ul>
+                    </form>
                 </div>
-            </div>
-        </section>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <div id="sort" class="mb-2">
-                            <div class="sort-item">
-                                <button type="button" class="btn-drop-toggle">
-                                    <span>Сначала полезные</span>
-                                    <svg class="icon-arr-down">
-                                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
-                                    </svg>
-                                </button>
-                                <ul class="ul-reset drop-list">
-                                    <li><a href="#">Сначала полезные</a></li>
-                                    <li><a href="#">Новые</a></li>
-                                    <li><a href="#">Проверенные</a></li>
-                                </ul>
-                            </div>
-                            <div class="sort-item">
-                                <button type="button" class="btn-drop-toggle">
-                                    <span>Все оценки</span>
-                                    <svg class="icon-arr-down">
-                                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
-                                    </svg>
-                                </button>
-                                <ul class="ul-reset drop-list">
-                                    <li><a href="#">Сначала полезные</a></li>
-                                    <li><a href="#">Новые</a></li>
-                                    <li><a href="#">Проверенные</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="reviews-list">
-                            {% for i in range(0, 5) %}
-                                <div class="review line">
+                <div class="reviews-list">
+                    {% for i in range(0, 5) %}
+                        <div class="review line">
+                            <div class="row">
+                                <div class="col-md-3 mb-1-xl">
+                                    {% if i == 1 %}
+                                        <figure class="border rounded">
+                                            <img src="img/img-credit.jpg" alt="">
+                                        </figure>
+                                    {% else %}
+                                        <figure>
+                                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                                        </figure>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-9">
                                     <div class="review-head">
                                         <div class="stars" data-rating="3">
                                             {% include 'stars.html' %}
@@ -96,20 +104,24 @@
                                         </div>
                                     </div>
                                     <div class="review-text">
-                                        Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра, это как
-                                        вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и не факт,
+                                        Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра,
+                                        это как
+                                        вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и
+                                        не факт,
                                         что
                                         ответят.
                                         <br>
-                                        Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было займов нигде,
+                                        Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было
+                                        займов нигде,
                                         тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
                                         Не рекомендую!
                                     </div>
                                     {% if i == 1 %}
                                         <div class="review-thumbs">
                                             {% for j in range(0, 10) %}
-                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img src="img/img-thumb.jpg"
-                                                                                                         alt="" class="rounded object-fit"></a>
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
                                             {% endfor %}
                                         </div>
                                     {% endif %}
@@ -128,59 +140,19 @@
                                         </button>
                                     </div>
                                 </div>
-                            {% endfor %}
+                            </div>
                         </div>
-                        <div class="reviews-add-form">
-                            <div class="title h1">Добавить отзыв</div>
-                            <form action="" id="add-review" class="form">
-                                <div class="row mb-1">
-                                    <div class="col-md-6 mb-1">
-                                        <label class="form-field">
-                                            <input type="text" name="name" placeholder="Ваше имя">
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6 mb-1">
-                                        <label class="form-field">
-                                            <input type="email" name="email" placeholder="E-Mail">
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="rating">
-                                            <span>Оценка <span class="red">*</span></span>
-                                            <div class="stars clickable" data-rating="3">
-                                                {% include 'stars.html' %}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <label class="form-field mb-1">
-                                    <textarea name="text" placeholder="Ваш комментарий*"></textarea>
-                                </label>
-                                <label class="form-field mb-1">
-                                    <input type="text" name="advantages" placeholder="Расскажите о преимуществах">
-                                </label>
-                                <label class="form-field mb-1">
-                                    <input type="text" name="disadvantages" placeholder="Расскажите о недостатках">
-                                </label>
-                                <label for="file" class="files-area mb-1">
-                                    <span>Нажмите или перетащите для загрузки фотографии</span>
-                                    <input type="file" id="file">
-                                </label>
-                                <div class="info mb-1">
-                                    * Поля, обязательные для заполнения
-                                </div>
-                                <div class="btn-wrap">
-                                    <button class="btn btn-yellow">Добавить отзыв</button>
-                                    <div class="rule">
-                                        Нажимая кнопку «Добавить отзыв» вы соглашаетесь с <a href="#" target="_blank">политикой обработки персональных данных и пользовательским соглашением</a>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
+                    {% endfor %}
+                    {% include 'nav-links.html' %}
+                </div>
+            </div>
+            <div class="col-md-3 hidden-xl">
+                <div class="block border rounded pd-2">
+                    <div class="title h2 mb-1">Оставьте отзыв</div>
+                    <div class="article">
+                        <p>Расскажите о своем опыте использования банковских услуг</p>
+                        <a href="#" class="btn btn-yellow all-space">Написать отзыв</a>
                     </div>
-                    {% include 'sidebar.html' %}
                 </div>
             </div>
         </div>

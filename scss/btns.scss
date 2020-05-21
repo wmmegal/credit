@@ -8,6 +8,7 @@
     border-radius: 0.25rem;
     line-height: 3rem;
     transition: $transition;
+    text-decoration: none !important;
 
     &.btn-yellow {
         background: $yellow;

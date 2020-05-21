@@ -49,12 +49,13 @@ jQuery(document).ready(function ($) {
     /**
      * Поиск
      */
-    let quickSearch = $('#quick-search');
+    let quickSearch = $('#quick-search'),
+        quickSearchForm = $('.quick-search-form');
     $('.btn-show-search').on('click', function (e) {
         quickSearch.addClass('active').find('input').focus();
     });
 
-    quickSearch.find('input').on('blur', function (e) {
+   quickSearchForm.find('input').on('blur', function (e) {
         let $this = $(this);
 
         setTimeout(function () {
@@ -63,7 +64,7 @@ jQuery(document).ready(function ($) {
         }, 1)
     });
 
-    quickSearch.find('input').on('focus', function (e) {
+    quickSearchForm.find('input').on('focus', function (e) {
         $(this).closest('form').find('.search-results').addClass('active');
     });
 
@@ -221,8 +222,8 @@ jQuery(document).ready(function ($) {
      * Дроп списки
      */
     $(document).on('click', '.btn-drop-toggle', function () {
+        $(this).closest('body').find('.drop-list, .btn-drop-toggle').removeClass('active');
         $(this).toggleClass('active');
-        $(this).closest('div').siblings().find('.drop-list');
         $(this).closest('div').find('.drop-list').toggleClass('active');
     });
 

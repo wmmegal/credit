@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>DSGN</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<div id="page">
+    <header id="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img src="img/logo.svg" alt=""></a>
+        </div>
+        <button type="button" class="btn-menu">
+            <i class="icon-burger"></i>
+        </button>
+        <nav id="nav">
+            <ul class="ul-reset">
+                <li>
+                    <a href="#">Кредитные карты</a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Займы</a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Дебетовые карты </a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Карты рассрочки</a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Кредиты </a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="quick-search">
+                <button type="button" class="btn-show-search">
+                    <svg class="icon-search">
+                        <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+                <form action="" class="quick-search-form">
+                    <input type="text" placeholder="Поиск" name="s">
+                    <button type="submit">
+                        <svg class="icon-search">
+                            <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                    <button type="button">
+                        <svg class="icon-cross">
+                            <use xlink:href="img/symbol/sprite.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <ul class="ul-reset search-results">
+                        <li><a href="#">Дизайн сайта</a></li>
+                        <li><a href="#">Дизайн мобильного приложения </a></li>
+                        <li><a href="#">Дизайн буклетов</a></li>
+                        <li><a href="#">Дизайн интерьера</a></li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <main id="main" class="section container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="breadcrumbs mb-1">
+                    <a href="#">Главная</a>
+                    <i class="sep">-</i>
+                    Статьи
+                </div>
+                <div class="title h1">Отзывы потребителей</div>
+                <div id="sort" class="mb-2">
+                    <div class="sort-item">
+                        <button type="button" class="btn-drop-toggle">
+                            <span>Все продукты</span>
+                            <svg class="icon-arr-down">
+                                <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="ul-reset drop-list">
+                            <li><a href="#">Сначала полезные</a></li>
+                            <li><a href="#">Новые</a></li>
+                            <li><a href="#">Проверенные</a></li>
+                        </ul>
+                    </div>
+                    <div class="sort-item">
+                        <button type="button" class="btn-drop-toggle">
+                            <span>Сначала полезные</span>
+                            <svg class="icon-arr-down">
+                                <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="ul-reset drop-list">
+                            <li><a href="#">Сначала полезные</a></li>
+                            <li><a href="#">Новые</a></li>
+                            <li><a href="#">Проверенные</a></li>
+                        </ul>
+                    </div>
+                    <div class="sort-item">
+                        <button type="button" class="btn-drop-toggle">
+                            <span>Все оценки</span>
+                            <svg class="icon-arr-down">
+                                <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="ul-reset drop-list">
+                            <li><a href="#">Сначала полезные</a></li>
+                            <li><a href="#">Новые</a></li>
+                            <li><a href="#">Проверенные</a></li>
+                        </ul>
+                    </div>
+                    <form action="" class="quick-search-form">
+                        <input type="text" placeholder="Название банка или организации" name="s">
+                        <button type="submit">
+                            <svg class="icon-search">
+                                <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                        <button type="button">
+                            <svg class="icon-cross">
+                                <use xlink:href="img/symbol/sprite.svg#icon-cross"></use>
+                            </svg>
+                        </button>
+                        <ul class="ul-reset search-results">
+                            <li><a href="#">Дизайн сайта</a></li>
+                            <li><a href="#">Дизайн мобильного приложения </a></li>
+                            <li><a href="#">Дизайн буклетов</a></li>
+                            <li><a href="#">Дизайн интерьера</a></li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="reviews-list">
+                    
+                        <div class="review line">
+                            <div class="row">
+                                <div class="col-md-3 mb-1-xl">
+                                    
+                                        <figure>
+                                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                                        </figure>
+                                    
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="review-head">
+                                        <div class="stars" data-rating="3">
+                                            
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                        </div>
+                                        <div class="review-author">
+                                            <b>Иван</b>
+                                            <span>16 сентября 2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-text">
+                                        Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра,
+                                        это как
+                                        вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и
+                                        не факт,
+                                        что
+                                        ответят.
+                                        <br>
+                                        Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было
+                                        займов нигде,
+                                        тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
+                                        Не рекомендую!
+                                    </div>
+                                    
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="review line">
+                            <div class="row">
+                                <div class="col-md-3 mb-1-xl">
+                                    
+                                        <figure class="border rounded">
+                                            <img src="img/img-credit.jpg" alt="">
+                                        </figure>
+                                    
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="review-head">
+                                        <div class="stars" data-rating="3">
+                                            
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                        </div>
+                                        <div class="review-author">
+                                            <b>Иван</b>
+                                            <span>16 сентября 2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-text">
+                                        Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра,
+                                        это как
+                                        вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и
+                                        не факт,
+                                        что
+                                        ответят.
+                                        <br>
+                                        Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было
+                                        займов нигде,
+                                        тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
+                                        Не рекомендую!
+                                    </div>
+                                    
+                                        <div class="review-thumbs">
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                            src="img/img-thumb.jpg"
+                                                            alt="" class="rounded object-fit"></a>
+                                            
+                                        </div>
+                                    
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="review line">
+                            <div class="row">
+                                <div class="col-md-3 mb-1-xl">
+                                    
+                                        <figure>
+                                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                                        </figure>
+                                    
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="review-head">
+                                        <div class="stars" data-rating="3">
+                                            
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                        </div>
+                                        <div class="review-author">
+                                            <b>Иван</b>
+                                            <span>16 сентября 2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-text">
+                                        Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра,
+                                        это как
+                                        вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и
+                                        не факт,
+                                        что
+                                        ответят.
+                                        <br>
+                                        Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было
+                                        займов нигде,
+                                        тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
+                                        Не рекомендую!
+                                    </div>
+                                    
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="review line">
+                            <div class="row">
+                                <div class="col-md-3 mb-1-xl">
+                                    
+                                        <figure>
+                                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                                        </figure>
+                                    
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="review-head">
+                                        <div class="stars" data-rating="3">
+                                            
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                        </div>
+                                        <div class="review-author">
+                                            <b>Иван</b>
+                                            <span>16 сентября 2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-text">
+                                        Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра,
+                                        это как
+                                        вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и
+                                        не факт,
+                                        что
+                                        ответят.
+                                        <br>
+                                        Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было
+                                        займов нигде,
+                                        тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
+                                        Не рекомендую!
+                                    </div>
+                                    
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="review line">
+                            <div class="row">
+                                <div class="col-md-3 mb-1-xl">
+                                    
+                                        <figure>
+                                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                                        </figure>
+                                    
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="review-head">
+                                        <div class="stars" data-rating="3">
+                                            
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                        </div>
+                                        <div class="review-author">
+                                            <b>Иван</b>
+                                            <span>16 сентября 2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-text">
+                                        Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра,
+                                        это как
+                                        вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и
+                                        не факт,
+                                        что
+                                        ответят.
+                                        <br>
+                                        Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было
+                                        займов нигде,
+                                        тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
+                                        Не рекомендую!
+                                    </div>
+                                    
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="nav-links">
+    <span>1</span>
+    
+        <a href="#">2</a>
+    
+        <a href="#">3</a>
+    
+        <a href="#">4</a>
+    
+        <a href="#">5</a>
+    
+</div>
+
+                </div>
+            </div>
+            <div class="col-md-3 hidden-xl">
+                <div class="block border rounded pd-2">
+                    <div class="title h2 mb-1">Оставьте отзыв</div>
+                    <div class="article">
+                        <p>Расскажите о своем опыте использования банковских услуг</p>
+                        <a href="#" class="btn btn-yellow all-space">Написать отзыв</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-2-xl">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 mb-2-xl">
+                <ul class="ul-reset list font-medium">
+                    <li><a href="#">Кредитные карты</a></li>
+                    <li><a href="#">Дебетовые карты</a></li>
+                    <li><a href="#">Карты рассрочки</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-2-xl">
+                <ul class="ul-reset list font-medium">
+                    <li><a href="#">Займы</a></li>
+                    <li><a href="#">Кредиты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="ul-reset list">
+                    <li><a href="#">О сервисе</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#policy" data-fancybox>Политика конфиденциальности</a></li>
+                    <li><a href="#question" data-fancybox>Задать вопрос</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2020 КредитыОнлайн. Все права защищены
+        </div>
+    </div>
+</footer>
+
+</div>
+<div class="modal" id="policy">
+    <div class="title h2">Политика конфиденциальности</div>
+    <div class="article">
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+    </div>
+</div>
+<div class="modal" id="question">
+    <div class="title h2 center">Задать вопрос</div>
+    <form action="" class="form">
+        <label class="form-field border">
+            <input type="text" name="name" placeholder="Ваше имя">
+        </label>
+        <label class="form-field border">
+            <input type="email" name="email" placeholder="E-Mail">
+        </label>
+        <label class="form-field border">
+            <textarea name="text" placeholder="Текст"></textarea>
+        </label>
+        <button class="btn btn-yellow all-space">Подобрать</button>
+    </form>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+</body>
+</html>
+
