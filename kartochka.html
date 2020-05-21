@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>DSGN</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<div id="page">
+    {% include 'header.html' %}
+    <main id="main">
+        <section id="card">
+            <div class="container">
+                <div class="breadcrumbs mb-1">
+                    <a href="#">Главная</a>
+                    <i class="sep">-</i>
+                    Статьи
+                </div>
+                <div class="card-head">
+                    <h1 class="title h1">Займ в CreditPlus</h1>
+                    <div class="stickers">
+                        <div class="sticker red">Бесплатная доставка</div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="stars" data-rating="3">
+                        {% include 'stars.html' %}
+                    </div>
+                    <span>4.2 (4)</span>
+                    <a href="#">8 отзывов</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <figure>
+                            <img src="img/img-credit.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row card-options">
+                            <div class="col-md-4 col-6 mb-1">
+                                <dl>
+                                    <dt>
+                                        Срок займа
+                                    </dt>
+                                    <dd>до 36 мес.</dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-4 col-6 mb-1">
+                                <dl>
+                                    <dt>
+                                        Сумма займа
+                                    </dt>
+                                    <dd>до 6 000 000 ₽</dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-4 col-6 mb-1">
+                                <dl>
+                                    <dt>
+                                        Рассмотрение
+                                    </dt>
+                                    <dd>1 час</dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-4 col-6 mb-1">
+                                <dl>
+                                    <dt>
+                                        Возраст заёмщика
+                                    </dt>
+                                    <dd>от 18 лет</dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-8 mb-1">
+                                <dl>
+                                    <dt>
+                                        Способы получения
+                                    </dt>
+                                    <dd>
+                                        <img src="img/icon-visa.svg" alt="">
+                                        <img src="img/icon-mc.svg" alt="">
+                                        <img src="img/icon-mir.svg" alt="">
+                                        <img src="img/icon-cash.svg" alt="">
+                                        <img src="img/icon-dollar.svg" alt="">
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-4 col-6 mb-1">
+                                <dl>
+                                    <dt>
+                                        Телефон
+                                    </dt>
+                                    <dd><a href="tel:8 800-222-23-23">8 800-222-23-23</a></dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-4 col-6 mb-1">
+                                <dl>
+                                    <dt>
+                                        Электронная почта
+                                    </dt>
+                                    <dd><a href="mailto:info@creditplus.ru">info@creditplus.ru</a></dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-4 col-6 mb-1">
+                                <dl>
+                                    <dt>
+                                        Сайт
+                                    </dt>
+                                    <dd><a href="#">creditplus.ru</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <form action="" class="filter-form">
+                            <div class="filter-input mb-2 with-slider">
+                                <label class="form-field">
+                                    <span class="label">Желаемый лимит</span>
+                                    <input type="text" name="credit_limit" value="48 000">
+                                </label>
+                                <div class="input-slider" data-min="1000" data-max="100000" data-value="20000"
+                                     data-join="₽"></div>
+                            </div>
+                            <button type="button" class="btn btn-yellow all-space">Оформить займ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="endpoint-names mb-2">
+                            <ul class="ul-reset">
+                                <li><a href="#">Условия</a></li>
+                                <li><a href="#">Требования к заемщикам</a></li>
+                                <li><a href="#">Как оформить</a></li>
+                                <li><a href="#">Способ получения</a></li>
+                                <li><a href="#">Вопрос-ответ</a></li>
+                                <li><a href="#">Вопрос-ответ</a></li>
+                            </ul>
+                        </div>
+                        <div class="advantages-disadvantages mb-2">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="title h2">Преимущества</div>
+                                    <ul class="ul-reset">
+                                        <li>Первый займ без процентов</li>
+                                        <li>Большие лимиты одобрения для первого займа</li>
+                                        <li>Нет навязанной страховки и скрытых процентов</li>
+                                        <li>Большие лимиты (до 80000 рублей) для
+                                            постоянных клиентов
+                                        </li>
+                                        <li>Первый займ без процентов</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="title h2">Недостатки</div>
+                                    <ul class="ul-reset v-2">
+                                        <li>Задержка оплаты займа (до 8-10 часов)</li>
+                                        <li>Нельзя получить займ на электронные кошельки</li>
+                                        <li>Часто "забывают" обновить данные по займу в
+                                            Бюро Кредитных Историй
+                                        </li>
+                                        <li>Частые проблемы с техподдержкой</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article mb-2">
+                            <h2>Онлайн займы в CreditPlus</h2>
+                            <p>CreditPlus – сервис быстрого онлайн-кредитования, один из трех ведущих в России по
+                                скорости и объемам кредитования. Все оформление происходит через интернет, а деньги
+                                можно получить в любой точке мира, где есть доступ к нему. Быстрая обработка заявок
+                                позволяет максимально сократить время до того момента, как средства окажутся в руках
+                                клиента.</p>
+                        </div>
+                        <div class="endpoint article" id="endpoint-1">
+                            <div class="title h1">Условия займа в CreditPlus</div>
+                            <p>CreditPlus предлагает на выбор несколько вариантов займов. Новые клиенты могут получить
+                                <span>от 1500 до 15000</span> руб. на срок от 5 до 15 дней под 0%. Второй и последующие
+                                займы предоставляются согласно установленным тарифам:</p>
+                            <div class="table-wrap">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th class="col-6">Тариф</th>
+                                        <th>Условия (процент, сумма, срок)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for i in range(0, 10) %}
+                                        <tr>
+                                            <td>Старт 0%</td>
+                                            <td>0% в день, доступно только для первого займа <br>
+                                                от 1500 до 15000 рублей <br>
+                                                от 5 до 15 дней
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <blockquote>
+                                Важным преимуществом CreditPlus является предоставление постоянным клиентам долгосрочных
+                                займов на срок от 10 до 18 недель с выплатами каждые две недели. Это тарифы “Турбо” и
+                                “Супертурбо”, по которым сумма микрокредита составит до 80 тыс. руб., а процентная
+                                ставка снизится до 0,8% в день.
+                            </blockquote>
+                            <p>В MoneyMan существует программа лояльности. Ее суть заключается в том, чтобы копить и
+                                тратить бонусные баллы. Своевременный возврат средств, рекомендации знакомым и отзывы в
+                                соцсетях поощряются бонусными баллами.</p>
+                            <div class="wp-caption aligncenter">
+                                <img src="img/banner.jpg" alt="">
+                                <div class="wp-caption-text">
+                                    Программа лояльности в Moneyman – накопленные баллы и самые выгодные тарифы.
+                                </div>
+                            </div>
+                            <p>Баллами можно погашать проценты по займу, оплачивать процедуру пролонгации. Чем больше
+                                баллов накопит заёмщик, тем быстрее он получит следующий уровень лояльности (тариф).
+                                Потратить баллы на погашение процентов можно в следующей пропорции: 100 баллов = 1
+                                рубль. Как только заёмщик тратит баллы, он утрачивает возможность перейти на следующий
+                                тариф.</p>
+                        </div>
+                        <div class="endpoint" id="endpoint-2">
+                            <div class="title h1">Требования к заемщикам</div>
+                            <ul>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                            </ul>
+                            <p>Также для получения займа в Манимен понадобятся действительный паспорт РФ, СНИЛС (карта
+                                пенсионного страхования), мобильный телефон и адрес электронной почты. Если клиент хочет
+                                получить микрокредит безналично – то банковская карта (VISA или MasterCard) любого банка
+                                России или реквизиты банковского счета.</p>
+
+                            <div class="filter-form-wrap">
+                                <div class="title h2">Калькулятор процентов CreditPlus</div>
+                                <form class="filter-form" action="">
+                                    <div class="filter-row">
+                                        <div class="filter-input with-slider">
+                                            <label class="form-field">
+                                                <span class="label">Сумма займа</span>
+                                                <input type="text" name="credit_limit" value="48 000">
+                                            </label>
+                                            <div class="input-slider" data-min="1000" data-max="100000"
+                                                 data-value="20000" data-join="₽"></div>
+                                        </div>
+                                        <div class="filter-input with-slider no-select">
+                                            <label class="form-field">
+                                                <span class="label">Срок займа</span>
+                                                <input type="text" name="spending_per_month" value="Пока незнаю">
+                                            </label>
+                                            <div class="input-slider" data-min="1" data-max="50" data-value="10"
+                                                 data-join="дней"></div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-row">
+                                        <div class="filter-detail">
+                                            <dl>
+                                                <dt>Сумма погашения</dt>
+                                                <dd>10 000 ₽</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="filter-detail">
+                                            <dl>
+                                                <dt>Погашение</dt>
+                                                <dd>29.04.2020</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-yellow">Подобрать займ</button>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="endpoint" id="endpoint-3">
+                            <div class="title h1">Оформление заявки в CreditPlus – 5 минут</div>
+                            <ul>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                            </ul>
+                            <p>Также для получения займа в Манимен понадобятся действительный паспорт РФ, СНИЛС (карта
+                                пенсионного страхования), мобильный телефон и адрес электронной почты. Если клиент хочет
+                                получить микрокредит безналично – то банковская карта (VISA или MasterCard) любого банка
+                                России или реквизиты банковского счета.</p>
+                        </div>
+                        <div class="endpoint">
+                            <div class="title h1">Шансы на одобрение заявки в CreditPlus – 81%</div>
+                            <p>Как и в любой другой организации, в CreditPlus возможны отказы. Они обусловлены чаще
+                                всего ложной информацией, которую предоставляет заемщик. Также отказывают из-за
+                                механических ошибок при введении данных. Еще одним препятствием на пути к получению
+                                микрокредита станет непогашенная задолженность перед банком или другой МФК/МФО. В
+                                CreditPlus нельзя взять новый займ, не погасив предыдущий.</p>
+                        </div>
+                        <div class="endpoint">
+                            <div class="title h1">Отказали в CreditPlus? Попробуйте другие займы</div>
+                            <p>Как и в любой другой организации, в CreditPlus возможны отказы. Они обусловлены чаще
+                                всего ложной информацией, которую предоставляет заемщик. Также отказывают из-за
+                                механических ошибок при введении данных. Еще одним препятствием на пути к получению
+                                микрокредита станет непогашенная задолженность перед банком или другой МФК/МФО. В
+                                CreditPlus нельзя взять новый займ, не погасив предыдущий.</p>
+                            <div class="offers-list">
+                                <div class="offer pd-2 border">
+                                    <div class="row">
+                                        <div class="col-md-3 mb-1-xl">
+                                            <div class="offer-title visible-xl">
+                                                <a href="#">Национальный кредит</a>
+                                            </div>
+                                            <figure class="border rounded d-flex align-items-center justify-content-center">
+                                                <img src="img/img-credit.jpg" alt="">
+                                            </figure>
+                                            <div class="rating justify-content-center">
+                                                <div class="stars" data-rating="3">
+                                                    {% include 'stars.html' %}
+                                                </div>
+                                                <a href="#">8 отзывов</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="offer-title hidden-xl">
+                                                <a href="#">Национальный кредит</a>
+                                            </div>
+                                            <div class="row offer-options">
+                                                <div class="col-md-4 col-6 mb-1">
+                                                    <dl>
+                                                        <dt>
+                                                            Срок займа
+                                                        </dt>
+                                                        <dd>до 36 мес.</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="col-md-4 col-6 mb-1">
+                                                    <dl>
+                                                        <dt>
+                                                            Сумма займа
+                                                        </dt>
+                                                        <dd>до 6 000 000 ₽</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="col-md-4 col-6 mb-1">
+                                                    <dl>
+                                                        <dt>
+                                                            Рассмотрение
+                                                        </dt>
+                                                        <dd>1 час</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="col-md-4 col-6 mb-1">
+                                                    <dl>
+                                                        <dt>
+                                                            Возраст заёмщика
+                                                        </dt>
+                                                        <dd>от 18 лет</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="col-md-8 mb-1">
+                                                    <dl>
+                                                        <dt>
+                                                            Способы получения
+                                                        </dt>
+                                                        <dd>
+                                                            <img src="img/icon-visa.svg" alt="">
+                                                            <img src="img/icon-mc.svg" alt="">
+                                                            <img src="img/icon-mir.svg" alt="">
+                                                            <img src="img/icon-cash.svg" alt="">
+                                                            <img src="img/icon-dollar.svg" alt="">
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="offer-buttons">
+                                                <button class="btn btn-yellow">Оформить займ</button>
+                                                <a href="#" class="btn btn-yellow-light">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="endpoint" id="endpoint-4">
+                            <div class="title h1">Способы получения займа</div>
+                            <ul>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                            </ul>
+                            <div class="title h1">Способы погашения займа</div>
+                            <ul>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                                <li>Гражданство Российской Федерации</li>
+                            </ul>
+                            <p>На второй день пользования микрокредитом его можно погасить досрочно с уплатой процентов
+                                только за то время, в течение которого вы фактически пользовались деньгами.
+                            </p>
+                        </div>
+                        <div class="endpoint">
+                            <div class="title h1">Полезные ссылки</div>
+                            <ul>
+                                <li><a href="#">Общие условия договора потребительского займа ООО МФК «Мани Мен»</a>
+                                </li>
+                                <li><a href="#">Общие условия договора потребительского займа ООО МФК «Мани Мен»</a>
+                                </li>
+                                <li><a href="#">Общие условия договора потребительского займа ООО МФК «Мани Мен»</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="endpoint" id="endpoint-6">
+                            <div class="title h1">Частые вопросы</div>
+                            <div id="faq">
+                                {% for i in range(0, 10) %}
+                                    <div class="faq">
+                                        <div class="question">
+                                            Как оставить/написать отзыв на сайте?
+                                            <svg class="icon-arr-down">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="answer article">
+                                            <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный
+                                                способ взаимодействия
+                                                между работодателем и специалистом. Данный формат сотрудничества не
+                                                требует личной
+                                                встречи, а обговаривать все детали проекта и оплачивать проделанный труд
+                                                просто даже
+                                                тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                                            <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом
+                                                именовали
+                                                вольных наемников в военном деле. Современный freelancer - это
+                                                профессионал, который
+                                                освободился от офисного гнёта и начал трудиться дома или в коворкинге.
+                                                Причем без
+                                                обязательного официального образования. Главное - в совершенстве владеть
+                                                навыками,
+                                                необходимыми для реализации конкретной задачи.</p>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="endpoint">
+                            <div class="title h1">Другие займы с такими же условиями</div>
+                            <div class="tags">
+                                <a href="#">10000 рублей</a>
+                                <a href="#">15000 рублей</a>
+                                <a href="#">30000 рублей</a>
+                                <a href="#">10000 рублей</a>
+                                <a href="#">15000 рублей</a>
+                                <a href="#">30000 рублей</a>
+                                <a href="#">10000 рублей</a>
+                                <a href="#">15000 рублей</a>
+                                <a href="#">30000 рублей</a>
+                            </div>
+                        </div>
+                        <div class="banner-text">
+                            <p><b>Остались вопросы? </b></p>
+                            <p>Остались вопросы? </p>
+                            <a href="#question" class="btn btn-white">Задать вопрос</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="offers">
+                            <div class="title h1">Похожие займы</div>
+                            {% for i in range(0, 3) %}
+                                <div class="offer v-2 border">
+                                    <figure>
+                                        <a href="#"><img src="img/img-credit.jpg" alt=""></a>
+                                    </figure>
+                                    <div class="offer-head line">
+                                        <a href="#" class="offer-title">Национальный кредит {{ i }}</a>
+                                    </div>
+                                    <div class="offer-options">
+                                        <dl>
+                                            <dt>Сумма займа</dt>
+                                            <dd>30 000 ₽</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Проц. ставка</dt>
+                                            <dd>0$</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Срок займа</dt>
+                                            <dd>7-21 день</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Решение</dt>
+                                            <dd>1 мин.</dd>
+                                        </dl>
+                                    </div>
+                                    <a href="#" class="btn btn-yellow">Подробнее</a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="reviews-list">
+                    <div class="title h1">Отзывы</div>
+                    {% for i in range(0, 3) %}
+                        <div class="review line">
+                            <div class="review-head">
+                                <div class="stars" data-rating="3">
+                                    {% include 'stars.html' %}
+                                </div>
+                                <div class="review-author">
+                                    <b>Иван</b>
+                                    <span>16 сентября 2019</span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра, это как
+                                вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и не факт,
+                                что
+                                ответят.
+                                <br>
+                                <br>
+                                Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было займов нигде,
+                                тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
+                                Не рекомендую!
+                            </div>
+                            {% if i == 1 %}
+                                <div class="review-thumbs">
+                                    {% for j in range(0, 10) %}
+                                        <a href="img/img-thumb.jpg" data-fancybox="gallery"><img src="img/img-thumb.jpg"
+                                                                                                 alt=""></a>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            <div class="likes">
+                                <button class="btn-like">
+                                    <svg class="icon-like">
+                                        <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                    </svg>
+                                    <span>0</span>
+                                </button>
+                                <button class="btn-dislike">
+                                    <svg class="icon-dislike">
+                                        <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                    </svg>
+                                    <span>0</span>
+                                </button>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <button class="btn btn-yellow">Оставить отзыв</button>
+                    <button class="btn btn-yellow">Все отзывы</button>
+                </div>
+                <div class="reviews-add-form">
+                    <div class="title h1">Добавить отзыв</div>
+                    <form action="" id="add-review" class="form">
+                        <div class="row mb-1">
+                            <div class="col-6 mb-1">
+                                <label class="form-field">
+                                    <input type="text" name="name" placeholder="Ваше имя">
+                                </label>
+                            </div>
+                            <div class="col-6 mb-1">
+                                <label class="form-field border">
+                                    <input type="email" name="email" placeholder="E-Mail">
+                                </label>
+                            </div>
+                            <div class="col-6">
+                                <div class="rating">
+                                    <span>Оценка <span class="red">*</span></span>
+                                    <div class="stars clickable" data-rating="3">
+                                        {% include 'stars.html' %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label class="form-field">
+                            <textarea name="text" placeholder="Ваш комментарий*"></textarea>
+                        </label>
+                        <label class="form-field">
+                            <input type="text" name="advantages" placeholder="Расскажите о преимуществах">
+                        </label>
+                        <label class="form-field">
+                            <input type="text" name="disadvantages" placeholder="Расскажите о недостатках">
+                        </label>
+                        <label for="file" class="files-area mb-1">
+                            <span>Нажмите или перетащите для загрузки фотографии</span>
+                            <input type="file" id="file">
+                        </label>
+                        <div class="info mb-1">
+                            * Поля, обязательные для заполнения
+                        </div>
+                        <button class="btn btn-yellow">Добавить отзыв</button>
+                        <div class="rule">
+                            Нажимая кнопку «Добавить отзыв» вы соглашаетесь с <a href="#" target="_blank">политикой обработки персональных данных и пользовательским соглашением</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+{% include 'modals.html' %}
+{% include 'scripts.html' %}
+</body>
+</html>
+

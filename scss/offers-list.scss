@@ -43,35 +43,7 @@
         }
 
         &-options {
-            dl {
-                line-height: 1.5rem;
-
-                dt {
-                    font-size: 0.875rem;
-                    white-space: nowrap;
-                }
-                dd {
-                    color: $dark;
-                    font-weight: 500;
-
-                    img {
-                        margin-right: 1rem;
-
-                        &:last-child {
-                            margin: 0;
-                        }
-                    }
-                }
-                &.v-2 {
-                    color: rgba(21, 21, 21, 0.3);
-                    font-size: 0.875rem;
-
-                    dd {
-                        font-size: 0.875rem;
-                        color: rgba(21, 21, 21, 0.3);
-                    }
-                }
-            }
+            @extend %options;
         }
 
         .btn-offer-details {

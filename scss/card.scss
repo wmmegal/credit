@@ -1,0 +1,38 @@
+#card {
+    background: $yellow_light;
+    padding: 4rem 0 1rem 0;
+
+    .card-head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.75rem;
+
+        .title {
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+
+        .stickers {
+            position: static;
+        }
+    }
+
+    .rating {
+        margin-bottom: 1.75rem;
+
+        span {
+            margin-right: 1rem;
+        }
+    }
+
+    figure {
+        height: 11rem;
+        border-radius: $rounded;
+        border: 0.063rem solid $border;
+        background-color: #ffffff;
+        @extend %flex-el-center;
+    }
+    .card-options {
+        @extend %options;
+    }
+}
