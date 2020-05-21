@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>DSGN</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<div id="page">
+    <header id="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img src="img/logo.svg" alt=""></a>
+        </div>
+        <button type="button" class="btn-menu">
+            <i class="icon-burger"></i>
+        </button>
+        <nav id="nav">
+            <ul class="ul-reset">
+                <li>
+                    <a href="#">Кредитные карты</a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Займы</a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Дебетовые карты </a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Карты рассрочки</a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Кредиты </a>
+                    <ul>
+                        <li><a href="#">Кредитные карты</a></li>
+                        <li><a href="#">Займы</a></li>
+                        <li><a href="#">Дебетовые карты </a></li>
+                        <li><a href="#">Карты рассрочки</a></li>
+                        <li><a href="#">Кредиты </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="quick-search">
+                <button type="button" class="btn-show-search">
+                    <svg class="icon-search">
+                        <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+                <form action="" class="quick-search-form">
+                    <input type="text" placeholder="Поиск" name="s">
+                    <button type="submit">
+                        <svg class="icon-search">
+                            <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                    <button type="button">
+                        <svg class="icon-cross">
+                            <use xlink:href="img/symbol/sprite.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <ul class="ul-reset search-results">
+                        <li><a href="#">Дизайн сайта</a></li>
+                        <li><a href="#">Дизайн мобильного приложения </a></li>
+                        <li><a href="#">Дизайн буклетов</a></li>
+                        <li><a href="#">Дизайн интерьера</a></li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <div id="filter">
+        <div class="container relative">
+            <div class="filter-title">Займы</div>
+            <form id="filter-form" class="filter-form" action="">
+                <div class="filter-row">
+                    <div class="filter-input with-slider">
+                        <label class="form-field">
+                            <span class="label">Сумма займа</span>
+                            <input type="text" name="credit_limit" value="48 000">
+                        </label>
+                        <div class="input-slider" data-min="1000" data-max="100000" data-value="20000"  data-join="₽"></div>
+                    </div>
+                    <div class="filter-input with-slider no-select">
+                        <label class="form-field">
+                            <span class="label">Срок займа</span>
+                            <input type="text" name="spending_per_month" value="Пока незнаю">
+                        </label>
+                        <div class="input-slider" data-min="1" data-max="50" data-value="10" data-join="дней"></div>
+                    </div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-detail">
+                        <dl>
+                            <dt>Вы берете</dt>
+                            <dd>10 000 ₽</dd>
+                        </dl>
+                        <dl>
+                            <dt>На срок</dt>
+                            <dd>15 дней</dd>
+                        </dl>
+                    </div>
+                    <div class="filter-detail">
+                        <dl>
+                            <dt>Отдаете</dt>
+                            <dd>11 050 ₽</dd>
+                        </dl>
+                        <dl>
+                            <dt>Вернуть до</dt>
+                            <dd>29.04.2020</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-yellow">Подобрать займ</button>
+            </form>
+            <figure>
+                <img src="img/girl.jpg" alt="" class="object-fit">
+            </figure>
+        </div>
+    </div>
+    <main id="main" class="section pb-0">
+        <div class="container">
+            <div id="sort" class="mb-2">
+                <div class="sort-item">
+                    <span>Сортировать:</span>
+                    <button type="button" class="btn-drop-toggle">
+                        <span>по льготному периоду</span>
+                        <svg class="icon-arr-down">
+                            <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                        </svg>
+                    </button>
+                    <ul class="ul-reset drop-list">
+                        <li><a href="#">Сначала полезные</a></li>
+                        <li><a href="#">Новые</a></li>
+                        <li><a href="#">Проверенные</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offers-list mb-2">
+                
+                    <div class="offer pd-2 border">
+                        <div class="row">
+                            <div class="col-md-3 mb-1-xl">
+                                <div class="offer-title visible-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <figure class="border rounded d-flex align-items-center justify-content-center">
+                                    <img src="img/img-credit.jpg" alt="">
+                                </figure>
+                                <div class="rating justify-content-center">
+                                    <div class="stars" data-rating="3">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <a href="#">8 отзывов</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="offer-title hidden-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row offer-options">
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Срок займа
+                                                    </dt>
+                                                    <dd>до 36 мес.</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Сумма займа
+                                                    </dt>
+                                                    <dd>до 6 000 000 ₽</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Рассмотрение
+                                                    </dt>
+                                                    <dd>1 час</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Возраст заёмщика
+                                                    </dt>
+                                                    <dd>от 18 лет</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-8 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Способы получения
+                                                    </dt>
+                                                    <dd>
+                                                        <img src="img/icon-visa.svg" alt="">
+                                                        <img src="img/icon-mc.svg" alt="">
+                                                        <img src="img/icon-mir.svg" alt="">
+                                                        <img src="img/icon-cash.svg" alt="">
+                                                        <img src="img/icon-dollar.svg" alt="">
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-yellow">Оформить займ</button>
+                                        <a href="#" class="btn btn-yellow-light">Подробнее</a>
+                                    </div>
+                                </div>
+                                <button class="btn-offer-details">
+                                    <span>Тарифы</span>
+                                    <svg class="icon-arr-down">
+                                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="offer-details">
+                            <div class="row justify-content-end">
+                                <div class="col-9">
+                                    <ul class="ul-reset tabs-content">
+                                        <li class="active">Условия</li>
+                                        <li>Снятие наличных</li>
+                                        <li>Лимиты</li>
+                                    </ul>
+                                    <div class="tab-content visible">
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                    </div>
+                                    <div class="tab-content">2</div>
+                                    <div class="tab-content">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="offer pd-2 border">
+                        <div class="row">
+                            <div class="col-md-3 mb-1-xl">
+                                <div class="offer-title visible-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <figure class="border rounded d-flex align-items-center justify-content-center">
+                                    <img src="img/img-credit.jpg" alt="">
+                                </figure>
+                                <div class="rating justify-content-center">
+                                    <div class="stars" data-rating="3">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <a href="#">8 отзывов</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="offer-title hidden-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row offer-options">
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Срок займа
+                                                    </dt>
+                                                    <dd>до 36 мес.</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Сумма займа
+                                                    </dt>
+                                                    <dd>до 6 000 000 ₽</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Рассмотрение
+                                                    </dt>
+                                                    <dd>1 час</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Возраст заёмщика
+                                                    </dt>
+                                                    <dd>от 18 лет</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-8 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Способы получения
+                                                    </dt>
+                                                    <dd>
+                                                        <img src="img/icon-visa.svg" alt="">
+                                                        <img src="img/icon-mc.svg" alt="">
+                                                        <img src="img/icon-mir.svg" alt="">
+                                                        <img src="img/icon-cash.svg" alt="">
+                                                        <img src="img/icon-dollar.svg" alt="">
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-yellow">Оформить займ</button>
+                                        <a href="#" class="btn btn-yellow-light">Подробнее</a>
+                                    </div>
+                                </div>
+                                <button class="btn-offer-details">
+                                    <span>Тарифы</span>
+                                    <svg class="icon-arr-down">
+                                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="offer-details">
+                            <div class="row justify-content-end">
+                                <div class="col-9">
+                                    <ul class="ul-reset tabs-content">
+                                        <li class="active">Условия</li>
+                                        <li>Снятие наличных</li>
+                                        <li>Лимиты</li>
+                                    </ul>
+                                    <div class="tab-content visible">
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                    </div>
+                                    <div class="tab-content">2</div>
+                                    <div class="tab-content">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="offer pd-2 border">
+                        <div class="row">
+                            <div class="col-md-3 mb-1-xl">
+                                <div class="offer-title visible-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <figure class="border rounded d-flex align-items-center justify-content-center">
+                                    <img src="img/img-credit.jpg" alt="">
+                                </figure>
+                                <div class="rating justify-content-center">
+                                    <div class="stars" data-rating="3">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <a href="#">8 отзывов</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="offer-title hidden-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row offer-options">
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Срок займа
+                                                    </dt>
+                                                    <dd>до 36 мес.</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Сумма займа
+                                                    </dt>
+                                                    <dd>до 6 000 000 ₽</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Рассмотрение
+                                                    </dt>
+                                                    <dd>1 час</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Возраст заёмщика
+                                                    </dt>
+                                                    <dd>от 18 лет</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-8 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Способы получения
+                                                    </dt>
+                                                    <dd>
+                                                        <img src="img/icon-visa.svg" alt="">
+                                                        <img src="img/icon-mc.svg" alt="">
+                                                        <img src="img/icon-mir.svg" alt="">
+                                                        <img src="img/icon-cash.svg" alt="">
+                                                        <img src="img/icon-dollar.svg" alt="">
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-yellow">Оформить займ</button>
+                                        <a href="#" class="btn btn-yellow-light">Подробнее</a>
+                                    </div>
+                                </div>
+                                <button class="btn-offer-details">
+                                    <span>Тарифы</span>
+                                    <svg class="icon-arr-down">
+                                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="offer-details">
+                            <div class="row justify-content-end">
+                                <div class="col-9">
+                                    <ul class="ul-reset tabs-content">
+                                        <li class="active">Условия</li>
+                                        <li>Снятие наличных</li>
+                                        <li>Лимиты</li>
+                                    </ul>
+                                    <div class="tab-content visible">
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                    </div>
+                                    <div class="tab-content">2</div>
+                                    <div class="tab-content">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="offer pd-2 border">
+                        <div class="row">
+                            <div class="col-md-3 mb-1-xl">
+                                <div class="offer-title visible-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <figure class="border rounded d-flex align-items-center justify-content-center">
+                                    <img src="img/img-credit.jpg" alt="">
+                                </figure>
+                                <div class="rating justify-content-center">
+                                    <div class="stars" data-rating="3">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <a href="#">8 отзывов</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="offer-title hidden-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row offer-options">
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Срок займа
+                                                    </dt>
+                                                    <dd>до 36 мес.</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Сумма займа
+                                                    </dt>
+                                                    <dd>до 6 000 000 ₽</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Рассмотрение
+                                                    </dt>
+                                                    <dd>1 час</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Возраст заёмщика
+                                                    </dt>
+                                                    <dd>от 18 лет</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-8 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Способы получения
+                                                    </dt>
+                                                    <dd>
+                                                        <img src="img/icon-visa.svg" alt="">
+                                                        <img src="img/icon-mc.svg" alt="">
+                                                        <img src="img/icon-mir.svg" alt="">
+                                                        <img src="img/icon-cash.svg" alt="">
+                                                        <img src="img/icon-dollar.svg" alt="">
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-yellow">Оформить займ</button>
+                                        <a href="#" class="btn btn-yellow-light">Подробнее</a>
+                                    </div>
+                                </div>
+                                <button class="btn-offer-details">
+                                    <span>Тарифы</span>
+                                    <svg class="icon-arr-down">
+                                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="offer-details">
+                            <div class="row justify-content-end">
+                                <div class="col-9">
+                                    <ul class="ul-reset tabs-content">
+                                        <li class="active">Условия</li>
+                                        <li>Снятие наличных</li>
+                                        <li>Лимиты</li>
+                                    </ul>
+                                    <div class="tab-content visible">
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                    </div>
+                                    <div class="tab-content">2</div>
+                                    <div class="tab-content">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="offer pd-2 border">
+                        <div class="row">
+                            <div class="col-md-3 mb-1-xl">
+                                <div class="offer-title visible-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <figure class="border rounded d-flex align-items-center justify-content-center">
+                                    <img src="img/img-credit.jpg" alt="">
+                                </figure>
+                                <div class="rating justify-content-center">
+                                    <div class="stars" data-rating="3">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <a href="#">8 отзывов</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="offer-title hidden-xl">
+                                    <a href="#">Национальный кредит</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row offer-options">
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Срок займа
+                                                    </dt>
+                                                    <dd>до 36 мес.</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Сумма займа
+                                                    </dt>
+                                                    <dd>до 6 000 000 ₽</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Рассмотрение
+                                                    </dt>
+                                                    <dd>1 час</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 col-6 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Возраст заёмщика
+                                                    </dt>
+                                                    <dd>от 18 лет</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-8 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Способы получения
+                                                    </dt>
+                                                    <dd>
+                                                        <img src="img/icon-visa.svg" alt="">
+                                                        <img src="img/icon-mc.svg" alt="">
+                                                        <img src="img/icon-mir.svg" alt="">
+                                                        <img src="img/icon-cash.svg" alt="">
+                                                        <img src="img/icon-dollar.svg" alt="">
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-yellow">Оформить займ</button>
+                                        <a href="#" class="btn btn-yellow-light">Подробнее</a>
+                                    </div>
+                                </div>
+                                <button class="btn-offer-details">
+                                    <span>Тарифы</span>
+                                    <svg class="icon-arr-down">
+                                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="offer-details">
+                            <div class="row justify-content-end">
+                                <div class="col-9">
+                                    <ul class="ul-reset tabs-content">
+                                        <li class="active">Условия</li>
+                                        <li>Снятие наличных</li>
+                                        <li>Лимиты</li>
+                                    </ul>
+                                    <div class="tab-content visible">
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        
+                                    </div>
+                                    <div class="tab-content">2</div>
+                                    <div class="tab-content">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="nav-links">
+    <span>1</span>
+    
+        <a href="#">2</a>
+    
+        <a href="#">3</a>
+    
+        <a href="#">4</a>
+    
+        <a href="#">5</a>
+    
+</div>
+
+        </div>
+    </main>
+    <div class="section reviews line">
+    <div class="container relative">
+        <div class="title h1">Последние отзывы</div>
+        <div class="slider-items">
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна </span>
+                            <div class="stars" data-rating="3">
+                                
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <a href="#" class="link-all">
+            <span>Все отзывы</span>
+            <svg class="icon-arr-right">
+                <use xlink:href="img/symbol/sprite.svg#icon-arr-right"></use>
+            </svg>
+        </a>
+        <a href="#" class="btn btn-yellow all-space">Все отзывы</a>
+    </div>
+</div>
+
+    <div class="section line" id="faq">
+    <div class="container">
+        <div class="title h1">Частые вопросы</div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <div class="question">
+                    Как оставить/написать отзыв на сайте?
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </div>
+                <div class="answer article">
+                    <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
+                        между работодателем и специалистом. Данный формат сотрудничества не требует личной
+                        встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
+                        тогда, когда стороны находятся в разных уголках планеты.</p>
+
+                    <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
+                        вольных наемников в военном деле. Современный freelancer - это профессионал, который
+                        освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
+                        обязательного официального образования. Главное - в совершенстве владеть навыками,
+                        необходимыми для реализации конкретной задачи.</p>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+    <div class="section line">
+    <div class="container">
+        <div class="title h1">Часто ищут</div>
+        <div class="row">
+            
+                <div class="col-md-3 mb-2-xl">
+                    <div class="title h5">Кредиты</div>
+                    <ul class="ul-reset list">
+                        <li><a href="#">Без справок о доходах</a></li>
+                        <li><a href="#">В день обращения</a></li>
+                        <li><a href="#">Самые выгодные</a></li>
+                        <li><a href="#">Наличными</a></li>
+                    </ul>
+                    <div class="title h5">Кредиты</div>
+                    <ul class="ul-reset list">
+                        <li><a href="#">Без справок о доходах</a></li>
+                        <li><a href="#">В день обращения</a></li>
+                        <li><a href="#">Самые выгодные</a></li>
+                        <li><a href="#">Наличными</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-3 mb-2-xl">
+                    <div class="title h5">Кредиты</div>
+                    <ul class="ul-reset list">
+                        <li><a href="#">Без справок о доходах</a></li>
+                        <li><a href="#">В день обращения</a></li>
+                        <li><a href="#">Самые выгодные</a></li>
+                        <li><a href="#">Наличными</a></li>
+                    </ul>
+                    <div class="title h5">Кредиты</div>
+                    <ul class="ul-reset list">
+                        <li><a href="#">Без справок о доходах</a></li>
+                        <li><a href="#">В день обращения</a></li>
+                        <li><a href="#">Самые выгодные</a></li>
+                        <li><a href="#">Наличными</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-3 mb-2-xl">
+                    <div class="title h5">Кредиты</div>
+                    <ul class="ul-reset list">
+                        <li><a href="#">Без справок о доходах</a></li>
+                        <li><a href="#">В день обращения</a></li>
+                        <li><a href="#">Самые выгодные</a></li>
+                        <li><a href="#">Наличными</a></li>
+                    </ul>
+                    <div class="title h5">Кредиты</div>
+                    <ul class="ul-reset list">
+                        <li><a href="#">Без справок о доходах</a></li>
+                        <li><a href="#">В день обращения</a></li>
+                        <li><a href="#">Самые выгодные</a></li>
+                        <li><a href="#">Наличными</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-3 mb-2-xl">
+                    <div class="title h5">Кредиты</div>
+                    <ul class="ul-reset list">
+                        <li><a href="#">Без справок о доходах</a></li>
+                        <li><a href="#">В день обращения</a></li>
+                        <li><a href="#">Самые выгодные</a></li>
+                        <li><a href="#">Наличными</a></li>
+                    </ul>
+                    <div class="title h5">Кредиты</div>
+                    <ul class="ul-reset list">
+                        <li><a href="#">Без справок о доходах</a></li>
+                        <li><a href="#">В день обращения</a></li>
+                        <li><a href="#">Самые выгодные</a></li>
+                        <li><a href="#">Наличными</a></li>
+                    </ul>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+    <article class="article section container">
+    <h1 class="title h1">КредитыОнлайн — помогаем в подборе кредита</h1>
+    <p>Одна из основных задач портала КредитыОнлайн — персональный подбор кредитного продукта для конкретного человека. Мы сделали все возможное, чтобы каждый смог сделать лучший выбор:</p>
+    <ul>
+        <li>Проанализировали кредитные предложения всех банков страны, разместили лучшие из них на страницах сайта;</li>
+        <li>Каждое предложение сопровождается подробным описанием: что нужно для получения кредита, требования к заемщикам, документам;</li>
+        <li>Проанализировали кредитные предложения всех банков страны, разместили лучшие из них на страницах сайта;</li>
+        <li>Каждое предложение сопровождается подробным описанием: что нужно для получения кредита, требования к заемщикам, документам;</li>
+        <li>Проанализировали кредитные предложения всех банков страны, разместили лучшие из них на страницах сайта;</li>
+        <li>Каждое предложение сопровождается подробным описанием: что нужно для получения кредита, требования к заемщикам, документам;</li>
+    </ul>
+    <p>Основная задача — сделать так, чтобы посетитель сайта нашел всю необходимую ему информацию на страницах КредитыОнлайн. Чтобы он смог выбрать оптимальный для себя финансовый продукт и сразу обратился онлайн за его предоставлением.</p>
+    <p>Мы — не просто сайт подбора кредитов и не мастер подбора. Мы — кладезь информации для тех, кто интересуется предложениями банка. Не нужно перебирать сайты банков, искать на них точную тарификацию (банки часто ее прячут), все необходимые сведения найдете на страницах КредитыОнлайн.</p>
+</article>
+
+    <footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-2-xl">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 mb-2-xl">
+                <ul class="ul-reset list font-medium">
+                    <li><a href="#">Кредитные карты</a></li>
+                    <li><a href="#">Дебетовые карты</a></li>
+                    <li><a href="#">Карты рассрочки</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-2-xl">
+                <ul class="ul-reset list font-medium">
+                    <li><a href="#">Займы</a></li>
+                    <li><a href="#">Кредиты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="ul-reset list">
+                    <li><a href="#">О сервисе</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#policy" data-fancybox>Политика конфиденциальности</a></li>
+                    <li><a href="#question" data-fancybox>Задать вопрос</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2020 КредитыОнлайн. Все права защищены
+        </div>
+    </div>
+</footer>
+
+</div>
+<div class="modal" id="policy">
+    <div class="title h2">Политика конфиденциальности</div>
+    <div class="article">
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+        <p>1. Общие положения
+            Настоящий документ определяет политику ООО «Сравни.ру» в обеспечении безопасности персональных данных, их обработки и действует в отношении всех персональных данных, обрабатываемых ООО «Сравни.ру» в ходе своей деятельности.</p>
+
+        <p>ООО «Сравни.ру» обеспечивает конфиденциальность и безопасность персональных данных при их обработке в соответствии с законодательством Российской Федерации.
+
+        <p>При обработке персональных данных ООО «Сравни.ру» соблюдает принципы и правила обработки персональных данных, а также иные требования, предусмотренные Федеральным законом РФ от 27.07.2006 г. № 152-ФЗ «О персональных данных».</p>
+    </div>
+</div>
+<div class="modal" id="question">
+    <div class="title h2 center">Задать вопрос</div>
+    <form action="" class="form">
+        <label class="form-field border">
+            <input type="text" name="name" placeholder="Ваше имя">
+        </label>
+        <label class="form-field border">
+            <input type="email" name="email" placeholder="E-Mail">
+        </label>
+        <label class="form-field border">
+            <textarea name="text" placeholder="Текст"></textarea>
+        </label>
+        <button class="btn btn-yellow all-space">Подобрать</button>
+    </form>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+</body>
+</html>
+
