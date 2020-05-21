@@ -1,13 +1,21 @@
 .article {
     @extend %clr;
 
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
     h1, h2, h3, h4, h5, h6 {
         color: $dark;
         font-weight: 500;
         margin-bottom: 1rem;
     }
 
-    h1, .title {
+    h1, .h1 {
         font-size: 2.5rem;
         @include media-breakpoint('xl') {
             font-size: 1.5rem;
@@ -100,7 +108,7 @@
             }
 
             &:last-child {
-                margin: 0;
+                margin-bottom: 0;
             }
         }
     }

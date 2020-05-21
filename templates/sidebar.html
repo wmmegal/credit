@@ -1,0 +1,34 @@
+<div class="col-md-3 hidden-xl">
+    <div class="offers">
+        <div class="title h1">Похожие займы</div>
+        {% for i in range(0, 3) %}
+            <div class="offer v-2 border mb-2">
+                <figure>
+                    <a href="#"><img src="img/img-credit.jpg" alt=""></a>
+                </figure>
+                <div class="offer-head line">
+                    <a href="#" class="offer-title">Национальный кредит {{ i }}</a>
+                </div>
+                <div class="offer-options">
+                    <dl>
+                        <dt>Сумма займа</dt>
+                        <dd>30 000 ₽</dd>
+                    </dl>
+                    <dl>
+                        <dt>Проц. ставка</dt>
+                        <dd>0$</dd>
+                    </dl>
+                    <dl>
+                        <dt>Срок займа</dt>
+                        <dd>7-21 день</dd>
+                    </dl>
+                    <dl>
+                        <dt>Решение</dt>
+                        <dd>1 мин.</dd>
+                    </dl>
+                </div>
+                <a href="#" class="btn btn-yellow">Подробнее</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>

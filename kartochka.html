@@ -28,10 +28,10 @@
                         {% include 'stars.html' %}
                     </div>
                     <span>4.2 (4)</span>
-                    <a href="#">8 отзывов</a>
+                    <a href="#endpoint-6" class="btn-anchor">8 отзывов</a>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-1-xl">
                         <figure>
                             <img src="img/img-credit.jpg" alt="">
                         </figure>
@@ -130,18 +130,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <div class="endpoint-names mb-2">
+                        <div class="endpoint-names">
                             <ul class="ul-reset">
-                                <li><a href="#">Условия</a></li>
-                                <li><a href="#">Требования к заемщикам</a></li>
-                                <li><a href="#">Как оформить</a></li>
-                                <li><a href="#">Способ получения</a></li>
-                                <li><a href="#">Вопрос-ответ</a></li>
-                                <li><a href="#">Вопрос-ответ</a></li>
+                                <li class="active"><a href="#endpoint-1" class="btn-anchor">Условия</a></li>
+                                <li><a href="#endpoint-2" class="btn-anchor">Требования к заемщикам</a></li>
+                                <li><a href="#endpoint-3" class="btn-anchor">Как оформить</a></li>
+                                <li><a href="#endpoint-4" class="btn-anchor">Способ получения</a></li>
+                                <li><a href="#endpoint-5" class="btn-anchor">Вопрос-ответ</a></li>
+                                <li><a href="#endpoint-6" class="btn-anchor">Отзывы</a></li>
                             </ul>
                         </div>
-                        <div class="advantages-disadvantages mb-2">
-                            <div class="row">
+                        <div class="advantages-disadvantages mb-2 border rounded">
+                            <div class="row no-gutters">
                                 <div class="col">
                                     <div class="title h2">Преимущества</div>
                                     <ul class="ul-reset">
@@ -184,7 +184,7 @@
                                 <table>
                                     <thead>
                                     <tr>
-                                        <th class="col-6">Тариф</th>
+                                        <th>Тариф</th>
                                         <th>Условия (процент, сумма, срок)</th>
                                     </tr>
                                     </thead>
@@ -222,7 +222,7 @@
                                 рубль. Как только заёмщик тратит баллы, он утрачивает возможность перейти на следующий
                                 тариф.</p>
                         </div>
-                        <div class="endpoint" id="endpoint-2">
+                        <div class="endpoint article" id="endpoint-2">
                             <div class="title h1">Требования к заемщикам</div>
                             <ul>
                                 <li>Гражданство Российской Федерации</li>
@@ -275,7 +275,7 @@
                             </div>
 
                         </div>
-                        <div class="endpoint" id="endpoint-3">
+                        <div class="endpoint article" id="endpoint-3">
                             <div class="title h1">Оформление заявки в CreditPlus – 5 минут</div>
                             <ul>
                                 <li>Гражданство Российской Федерации</li>
@@ -288,7 +288,7 @@
                                 получить микрокредит безналично – то банковская карта (VISA или MasterCard) любого банка
                                 России или реквизиты банковского счета.</p>
                         </div>
-                        <div class="endpoint">
+                        <div class="endpoint article">
                             <div class="title h1">Шансы на одобрение заявки в CreditPlus – 81%</div>
                             <p>Как и в любой другой организации, в CreditPlus возможны отказы. Они обусловлены чаще
                                 всего ложной информацией, которую предоставляет заемщик. Также отказывают из-за
@@ -296,92 +296,93 @@
                                 микрокредита станет непогашенная задолженность перед банком или другой МФК/МФО. В
                                 CreditPlus нельзя взять новый займ, не погасив предыдущий.</p>
                         </div>
-                        <div class="endpoint">
+                        <div class="endpoint article">
                             <div class="title h1">Отказали в CreditPlus? Попробуйте другие займы</div>
-                            <p>Как и в любой другой организации, в CreditPlus возможны отказы. Они обусловлены чаще
-                                всего ложной информацией, которую предоставляет заемщик. Также отказывают из-за
-                                механических ошибок при введении данных. Еще одним препятствием на пути к получению
-                                микрокредита станет непогашенная задолженность перед банком или другой МФК/МФО. В
-                                CreditPlus нельзя взять новый займ, не погасив предыдущий.</p>
                             <div class="offers-list">
-                                <div class="offer pd-2 border">
-                                    <div class="row">
-                                        <div class="col-md-3 mb-1-xl">
-                                            <div class="offer-title visible-xl">
-                                                <a href="#">Национальный кредит</a>
-                                            </div>
-                                            <figure class="border rounded d-flex align-items-center justify-content-center">
-                                                <img src="img/img-credit.jpg" alt="">
-                                            </figure>
-                                            <div class="rating justify-content-center">
-                                                <div class="stars" data-rating="3">
-                                                    {% include 'stars.html' %}
+                                <div class="slider-offers">
+                                    {% for i in range(0, 3)  %}
+                                        <div class="offer pd-2 border">
+                                            <div class="row">
+                                                <div class="col-md-4 mb-1-xl">
+                                                    <div class="offer-title visible-xl">
+                                                        <a href="#">Национальный кредит</a>
+                                                    </div>
+                                                    <figure class="border rounded d-flex align-items-center justify-content-center">
+                                                        <img src="img/img-credit.jpg" alt="">
+                                                    </figure>
+                                                    <div class="rating justify-content-center">
+                                                        <div class="stars" data-rating="3">
+                                                            {% include 'stars.html' %}
+                                                        </div>
+                                                        <a href="#">8 отзывов</a>
+                                                    </div>
                                                 </div>
-                                                <a href="#">8 отзывов</a>
+                                                <div class="col-md-8">
+                                                    <div class="offer-title hidden-xl">
+                                                        <a href="#">Национальный кредит</a>
+                                                    </div>
+                                                    <div class="row offer-options">
+                                                        <div class="col-md-4 col-6 mb-1">
+                                                            <dl>
+                                                                <dt>
+                                                                    Срок займа
+                                                                </dt>
+                                                                <dd>до 36 мес.</dd>
+                                                            </dl>
+                                                        </div>
+                                                        <div class="col-md-4 col-6 mb-1">
+                                                            <dl>
+                                                                <dt>
+                                                                    Сумма займа
+                                                                </dt>
+                                                                <dd>до 6 000 000 ₽</dd>
+                                                            </dl>
+                                                        </div>
+                                                        <div class="col-md-4 col-6 mb-1">
+                                                            <dl>
+                                                                <dt>
+                                                                    Рассмотрение
+                                                                </dt>
+                                                                <dd>1 час</dd>
+                                                            </dl>
+                                                        </div>
+                                                        <div class="col-md-4 col-6 mb-1">
+                                                            <dl>
+                                                                <dt>
+                                                                    Возраст заёмщика
+                                                                </dt>
+                                                                <dd>от 18 лет</dd>
+                                                            </dl>
+                                                        </div>
+                                                        <div class="col-md-8 mb-1">
+                                                            <dl>
+                                                                <dt>
+                                                                    Способы получения
+                                                                </dt>
+                                                                <dd>
+                                                                    <img src="img/icon-visa.svg" alt="">
+                                                                    <img src="img/icon-mc.svg" alt="">
+                                                                    <img src="img/icon-mir.svg" alt="">
+                                                                    <img src="img/icon-cash.svg" alt="">
+                                                                    <img src="img/icon-dollar.svg" alt="">
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                    <div class="offer-buttons">
+                                                        <button class="btn btn-yellow">Оформить займ</button>
+                                                        <a href="#" class="btn btn-yellow-light">Подробнее</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-9">
-                                            <div class="offer-title hidden-xl">
-                                                <a href="#">Национальный кредит</a>
-                                            </div>
-                                            <div class="row offer-options">
-                                                <div class="col-md-4 col-6 mb-1">
-                                                    <dl>
-                                                        <dt>
-                                                            Срок займа
-                                                        </dt>
-                                                        <dd>до 36 мес.</dd>
-                                                    </dl>
-                                                </div>
-                                                <div class="col-md-4 col-6 mb-1">
-                                                    <dl>
-                                                        <dt>
-                                                            Сумма займа
-                                                        </dt>
-                                                        <dd>до 6 000 000 ₽</dd>
-                                                    </dl>
-                                                </div>
-                                                <div class="col-md-4 col-6 mb-1">
-                                                    <dl>
-                                                        <dt>
-                                                            Рассмотрение
-                                                        </dt>
-                                                        <dd>1 час</dd>
-                                                    </dl>
-                                                </div>
-                                                <div class="col-md-4 col-6 mb-1">
-                                                    <dl>
-                                                        <dt>
-                                                            Возраст заёмщика
-                                                        </dt>
-                                                        <dd>от 18 лет</dd>
-                                                    </dl>
-                                                </div>
-                                                <div class="col-md-8 mb-1">
-                                                    <dl>
-                                                        <dt>
-                                                            Способы получения
-                                                        </dt>
-                                                        <dd>
-                                                            <img src="img/icon-visa.svg" alt="">
-                                                            <img src="img/icon-mc.svg" alt="">
-                                                            <img src="img/icon-mir.svg" alt="">
-                                                            <img src="img/icon-cash.svg" alt="">
-                                                            <img src="img/icon-dollar.svg" alt="">
-                                                        </dd>
-                                                    </dl>
-                                                </div>
-                                            </div>
-                                            <div class="offer-buttons">
-                                                <button class="btn btn-yellow">Оформить займ</button>
-                                                <a href="#" class="btn btn-yellow-light">Подробнее</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    {% endfor %}
                                 </div>
+
                             </div>
+                            <div class="arrows"></div>
                         </div>
-                        <div class="endpoint" id="endpoint-4">
+                        <div class="endpoint article" id="endpoint-4">
                             <div class="title h1">Способы получения займа</div>
                             <ul>
                                 <li>Гражданство Российской Федерации</li>
@@ -400,7 +401,7 @@
                                 только за то время, в течение которого вы фактически пользовались деньгами.
                             </p>
                         </div>
-                        <div class="endpoint">
+                        <div class="endpoint article">
                             <div class="title h1">Полезные ссылки</div>
                             <ul>
                                 <li><a href="#">Общие условия договора потребительского займа ООО МФК «Мани Мен»</a>
@@ -411,7 +412,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="endpoint" id="endpoint-6">
+                        <div class="endpoint article" id="endpoint-5">
                             <div class="title h1">Частые вопросы</div>
                             <div id="faq">
                                 {% for i in range(0, 10) %}
@@ -445,7 +446,7 @@
                                 {% endfor %}
                             </div>
                         </div>
-                        <div class="endpoint">
+                        <div class="endpoint article">
                             <div class="title h1">Другие займы с такими же условиями</div>
                             <div class="tags">
                                 <a href="#">10000 рублей</a>
@@ -461,149 +462,124 @@
                         </div>
                         <div class="banner-text">
                             <p><b>Остались вопросы? </b></p>
-                            <p>Остались вопросы? </p>
-                            <a href="#question" class="btn btn-white">Задать вопрос</a>
+                            <p>Мы на связи 24 часа, ответим на любой вопрос и поможем в любой ситуации. </p>
+                            <a href="#question" data-fancybox class="btn btn-white">Задать вопрос</a>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="offers">
-                            <div class="title h1">Похожие займы</div>
-                            {% for i in range(0, 3) %}
-                                <div class="offer v-2 border">
-                                    <figure>
-                                        <a href="#"><img src="img/img-credit.jpg" alt=""></a>
-                                    </figure>
-                                    <div class="offer-head line">
-                                        <a href="#" class="offer-title">Национальный кредит {{ i }}</a>
-                                    </div>
-                                    <div class="offer-options">
-                                        <dl>
-                                            <dt>Сумма займа</dt>
-                                            <dd>30 000 ₽</dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>Проц. ставка</dt>
-                                            <dd>0$</dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>Срок займа</dt>
-                                            <dd>7-21 день</dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>Решение</dt>
-                                            <dd>1 мин.</dd>
-                                        </dl>
-                                    </div>
-                                    <a href="#" class="btn btn-yellow">Подробнее</a>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
+                    {% include 'sidebar.html' %}
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="endpoint-6">
             <div class="container">
-                <div class="reviews-list">
-                    <div class="title h1">Отзывы</div>
-                    {% for i in range(0, 3) %}
-                        <div class="review line">
-                            <div class="review-head">
-                                <div class="stars" data-rating="3">
-                                    {% include 'stars.html' %}
-                                </div>
-                                <div class="review-author">
-                                    <b>Иван</b>
-                                    <span>16 сентября 2019</span>
-                                </div>
-                            </div>
-                            <div class="review-text">
-                                Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра, это как
-                                вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и не факт,
-                                что
-                                ответят.
-                                <br>
-                                <br>
-                                Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было займов нигде,
-                                тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
-                                Не рекомендую!
-                            </div>
-                            {% if i == 1 %}
-                                <div class="review-thumbs">
-                                    {% for j in range(0, 10) %}
-                                        <a href="img/img-thumb.jpg" data-fancybox="gallery"><img src="img/img-thumb.jpg"
-                                                                                                 alt=""></a>
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-                            <div class="likes">
-                                <button class="btn-like">
-                                    <svg class="icon-like">
-                                        <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
-                                    </svg>
-                                    <span>0</span>
-                                </button>
-                                <button class="btn-dislike">
-                                    <svg class="icon-dislike">
-                                        <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
-                                    </svg>
-                                    <span>0</span>
-                                </button>
-                            </div>
-                        </div>
-                    {% endfor %}
-                    <button class="btn btn-yellow">Оставить отзыв</button>
-                    <button class="btn btn-yellow">Все отзывы</button>
-                </div>
-                <div class="reviews-add-form">
-                    <div class="title h1">Добавить отзыв</div>
-                    <form action="" id="add-review" class="form">
-                        <div class="row mb-1">
-                            <div class="col-6 mb-1">
-                                <label class="form-field">
-                                    <input type="text" name="name" placeholder="Ваше имя">
-                                </label>
-                            </div>
-                            <div class="col-6 mb-1">
-                                <label class="form-field border">
-                                    <input type="email" name="email" placeholder="E-Mail">
-                                </label>
-                            </div>
-                            <div class="col-6">
-                                <div class="rating">
-                                    <span>Оценка <span class="red">*</span></span>
-                                    <div class="stars clickable" data-rating="3">
-                                        {% include 'stars.html' %}
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="reviews-list">
+                            <div class="title h1">Отзывы <span class="number">8</span></div>
+                            {% for i in range(0, 3) %}
+                                <div class="review line">
+                                    <div class="review-head">
+                                        <div class="stars" data-rating="3">
+                                            {% include 'stars.html' %}
+                                        </div>
+                                        <div class="review-author">
+                                            <b>Иван</b>
+                                            <span>16 сентября 2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-text">
+                                        Сотрудники CreditPlus названивают с напоминаем об уже оплаченном займе в 8 утра, это как
+                                        вообще?! Не берите здесь займ. Поддержки нормальной нет, только на почту пиши и не факт,
+                                        что
+                                        ответят.
+                                        <br>
+                                        Система одобрения заявок в Moneyman мне тоже вообще не ясна. Когда не было займов нигде,
+                                        тогда не дали. Когда было еще 3 текущих займа, то Moneyman одобрили.
+                                        Не рекомендую!
+                                    </div>
+                                    {% if i == 1 %}
+                                        <div class="review-thumbs">
+                                            {% for j in range(0, 10) %}
+                                                <a href="img/img-thumb.jpg" data-fancybox="gallery"><img src="img/img-thumb.jpg"
+                                                                                                         alt="" class="rounded object-fit"></a>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
+                            {% endfor %}
+                            <button class="btn btn-yellow btn-add-review">Оставить отзыв</button>
+                            <button class="btn btn-yellow">Все отзывы</button>
                         </div>
+                        <div class="reviews-add-form">
+                            <div class="title h1">Добавить отзыв</div>
+                            <form action="" id="add-review" class="form">
+                                <div class="row mb-1">
+                                    <div class="col-md-6 mb-1">
+                                        <label class="form-field">
+                                            <input type="text" name="name" placeholder="Ваше имя">
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6 mb-1">
+                                        <label class="form-field">
+                                            <input type="email" name="email" placeholder="E-Mail">
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="rating">
+                                            <span>Оценка <span class="red">*</span></span>
+                                            <div class="stars clickable" data-rating="3">
+                                                {% include 'stars.html' %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <label class="form-field">
-                            <textarea name="text" placeholder="Ваш комментарий*"></textarea>
-                        </label>
-                        <label class="form-field">
-                            <input type="text" name="advantages" placeholder="Расскажите о преимуществах">
-                        </label>
-                        <label class="form-field">
-                            <input type="text" name="disadvantages" placeholder="Расскажите о недостатках">
-                        </label>
-                        <label for="file" class="files-area mb-1">
-                            <span>Нажмите или перетащите для загрузки фотографии</span>
-                            <input type="file" id="file">
-                        </label>
-                        <div class="info mb-1">
-                            * Поля, обязательные для заполнения
+                                <label class="form-field mb-1">
+                                    <textarea name="text" placeholder="Ваш комментарий*"></textarea>
+                                </label>
+                                <label class="form-field mb-1">
+                                    <input type="text" name="advantages" placeholder="Расскажите о преимуществах">
+                                </label>
+                                <label class="form-field mb-1">
+                                    <input type="text" name="disadvantages" placeholder="Расскажите о недостатках">
+                                </label>
+                                <label for="file" class="files-area mb-1">
+                                    <span>Нажмите или перетащите для загрузки фотографии</span>
+                                    <input type="file" id="file">
+                                </label>
+                                <div class="info mb-1">
+                                    * Поля, обязательные для заполнения
+                                </div>
+                                <div class="btn-wrap">
+                                    <button class="btn btn-yellow">Добавить отзыв</button>
+                                    <div class="rule">
+                                        Нажимая кнопку «Добавить отзыв» вы соглашаетесь с <a href="#" target="_blank">политикой обработки персональных данных и пользовательским соглашением</a>
+                                    </div>
+                                </div>
+
+                            </form>
                         </div>
-                        <button class="btn btn-yellow">Добавить отзыв</button>
-                        <div class="rule">
-                            Нажимая кнопку «Добавить отзыв» вы соглашаетесь с <a href="#" target="_blank">политикой обработки персональных данных и пользовательским соглашением</a>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+
             </div>
         </div>
     </main>
+    {% include 'footer.html' %}
 </div>
 {% include 'modals.html' %}
 {% include 'scripts.html' %}

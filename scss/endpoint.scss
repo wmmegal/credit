@@ -1,3 +1,184 @@
-.endpoint {
+.endpoint-names {
+    margin-bottom: 2.4rem;
+    @include media-breakpoint('xl') {
+        display: none;
+    }
 
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            margin-right: 2.5rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            cursor: pointer;
+            white-space: nowrap;
+            @include media-breakpoint('xl') {
+                white-space: nowrap;
+                margin-right: 1.5rem;
+            }
+
+
+            &:hover, &.active {
+                position: relative;
+                cursor: default;
+                color: $dark;
+
+                a {
+                    color: $dark;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    right: 0;
+                    height: 0.125rem;
+                    border-radius: 0.125rem;
+                    background-color: $yellow;
+                }
+            }
+
+        }
+    }
+}
+
+.advantages-disadvantages {
+    .col {
+        border-right: 1px solid $border;
+        padding: 1.5rem;
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        @include media-breakpoint('xl') {
+            padding: 1.25rem;
+            border-right: 0;
+            border-bottom: 1px solid $border;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    ul {
+        li {
+            line-height: 1.5rem;
+            margin-bottom: 0.5rem;
+            padding-left: 1.75rem;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0.25rem;
+                left: 0;
+                background: url("../img/icon-like.svg") no-repeat;
+                width: 1rem;
+                height: 0.875rem;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &.v-2 {
+            li {
+                &:before {
+                    background: url("../img/icon-dislike.svg") no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.endpoint {
+    margin-bottom: 3rem;
+    position: relative;
+    @include media-breakpoint('xl') {
+        margin-bottom: 2.5rem;
+    }
+
+    .table-wrap {
+        table {
+            th, td {
+                width: 50%;
+                @include media-breakpoint('xl') {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .filter-form-wrap {
+        background: $yellow_light;
+        padding: 2rem 2rem 0.5rem 2rem;
+        position: relative;
+        @include media-breakpoint('xl') {
+            padding: 1rem;
+            margin: 0 -5vw;
+        }
+
+        .filter-row {
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            position: absolute;
+            left: 41rem;
+            bottom: 5rem;
+            @include media-breakpoint('xl') {
+                position: static;
+            }
+        }
+    }
+
+    .offers-list {
+        .offer {
+            margin: 0 1px 0 0;
+            border-radius: 0.5rem;
+        }
+    }
+
+
+    .slick-dots {
+        margin: 1rem 0 0 0 !important;
+
+        li {
+            padding: 0;
+            font-size: 0;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .arrows {
+        position: absolute;
+        top: 1.2rem;
+        right: 0;
+
+        .slick-arrow.slick-next {
+            right: 0;
+        }
+
+        .slick-arrow.slick-prev {
+            left: auto;
+            right: 2.5rem;
+            margin-top: -5px;
+        }
+    }
+
+    &:last-child {
+        margin: 0;
+    }
 }

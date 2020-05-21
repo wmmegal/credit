@@ -31,6 +31,7 @@
                 display: inline-block;
                 font-size: 1.5rem;
                 font-weight: 500;
+                text-decoration: none;
                 @include media-breakpoint('xl') {
                     font-size: 1.125rem;
                 }
@@ -57,6 +58,7 @@
                 fill: $yellow;
                 transition: $transition;
             }
+
             &.active {
                 .icon-arr-down {
                     transform: rotate(180deg);
@@ -80,6 +82,7 @@
                     width: 50%;
                     padding: 0.75rem 1rem;
                 }
+
                 &:nth-child(even) {
                     background: #fff;
                 }
@@ -103,7 +106,6 @@
                     white-space: nowrap;
                     margin-right: 1.5rem;
                 }
-
 
 
                 &.active {
@@ -132,12 +134,28 @@
 
         .btn {
             margin-bottom: 0.5rem;
+            text-decoration: none;
 
             @include media-breakpoint('xl') {
                 width: 100%;
             }
+
             &:last-child {
                 margin: 0;
+            }
+        }
+
+        &-buttons {
+            .btn {
+                margin: 0 1rem 0 0;
+
+                @include media-breakpoint('xl') {
+                    margin: 0 0 0.5rem 0;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
             }
         }
 
@@ -145,6 +163,7 @@
             border-top-left-radius: $rounded;
             border-top-right-radius: $rounded;
         }
+
         &:last-child {
             border-bottom-left-radius: $rounded;
             border-bottom-right-radius: $rounded;

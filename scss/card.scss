@@ -1,11 +1,17 @@
 #card {
     background: $yellow_light;
     padding: 4rem 0 1rem 0;
+    @include media-breakpoint('xl') {
+        padding-top: 2rem;
+    }
 
     .card-head {
         display: flex;
         align-items: center;
         margin-bottom: 0.75rem;
+        @include media-breakpoint('xl') {
+            display: block;
+        }
 
         .title {
             margin-right: 1rem;
@@ -14,6 +20,9 @@
 
         .stickers {
             position: static;
+            @include media-breakpoint('xl') {
+                display: none;
+            }
         }
     }
 
@@ -34,5 +43,13 @@
     }
     .card-options {
         @extend %options;
+
+        @include media-breakpoint('xl') {
+            margin-bottom: 0.5rem;
+
+            .mb-1 {
+                margin-bottom: 0.5rem !important;
+            }
+        }
     }
 }

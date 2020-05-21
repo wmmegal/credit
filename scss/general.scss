@@ -273,3 +273,49 @@ button {
         }
     }
 }
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        border-radius: 1.5rem;
+        background-color: $yellow_light;
+        margin: 0 0.5rem 0.5rem 0;
+        text-decoration: none !important;
+        line-height: 2rem;
+        padding: 0 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+}
+
+.banner-text {
+    background: url("../img/bg-circle-2.svg") no-repeat left top $yellow;
+    padding: 1.5rem;
+    position: relative;
+    line-height: 1.5rem;
+    border-radius: 0.5rem;
+    @include media-breakpoint('xl') {
+        padding: 1rem;
+        background: url("../img/bg-circle-3.svg") no-repeat left top $yellow;
+    }
+
+    b {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $dark;
+    }
+    .btn {
+        @include center-y;
+        right: 1.5rem;
+        background: #fff !important;
+
+        @include media-breakpoint('xl') {
+            position: static;
+            transform: none;
+            margin-top: 1rem;
+            width: 100%;
+        }
+    }
+}

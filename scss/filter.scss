@@ -146,6 +146,10 @@
             dt, dd {
                 width: 50%;
             }
+
+            &:last-child {
+                margin: 0;
+            }
         }
     }
 

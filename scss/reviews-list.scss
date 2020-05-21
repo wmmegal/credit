@@ -1,0 +1,109 @@
+.reviews-list {
+    position: relative;
+    margin-bottom: 4rem;
+    @include media-breakpoint('xl') {
+        margin-bottom: 2rem;
+    }
+
+    .title {
+        @include media-breakpoint('xl') {
+            margin-bottom: 2rem;
+            padding-top: 0.75rem;
+        }
+    }
+
+    .number {
+        color: $yellow;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 500;
+        vertical-align: top;
+    }
+    .review {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        &-head {
+            margin-bottom: 0.5rem;
+            align-items: center;
+            display: flex;
+        }
+
+        &-author {
+            border-left: 1px solid $border;
+            line-height: 1.5rem;
+            padding-left: 1rem;
+            margin-left: 1rem;
+
+            b {
+                font-weight: 500;
+                color: $dark;
+            }
+            span {
+                color: rgba(21, 21, 21, 0.3);
+                font-size: 0.875rem;
+                margin-left: 0.25rem;
+            }
+        }
+
+        &-text {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        &-thumbs {
+            font-size: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+
+            a {
+                width: 7.5rem;
+                height: 5rem;
+                margin: 0 0.5rem 0.5rem 0;
+            }
+        }
+        .likes {
+            display: flex;
+            align-items: baseline;
+
+            svg {
+                width: 1rem;
+                height: 0.875rem;
+            }
+
+            span {
+                @extend %dib;
+                font-size: 0.875rem;
+                margin-left: 0.5rem;
+            }
+
+            .btn-like {
+                svg {
+                    fill: $yellow;
+                }
+            }
+
+            .btn-dislike {
+
+                margin-left: 1.25rem;
+            }
+
+            button.active {
+                transition: 0.3s all;
+
+                &.active {
+                    opacity: 0.5;
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+    .btn-add-review {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

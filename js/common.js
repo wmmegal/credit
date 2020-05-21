@@ -117,6 +117,29 @@ jQuery(document).ready(function ($) {
 
 
     /**
+     * Слайдер предложений
+     */
+    $('.slider-offers').slick({
+        dots: false,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        appendArrows: $('.arrows'),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+
+    /**
      * Слайдер элементов
      */
     let sliderItems = $('.slider-items'),
@@ -256,7 +279,28 @@ jQuery(document).ready(function ($) {
      */
     $('.btn-offer-details').on('click',function (e) {
         $(this).toggleClass('active').closest('.offer').find('.offer-details').slideToggle();
-    })
+    });
+
+    /**
+     * Кнопка с анкором
+     */
+    $('.btn-anchor').on('click', function (e) {
+        let $this = $(this);
+        let href = $this.attr('href');
+
+        if (!$(href).length) {
+            return;
+        }
+        $this.closest('li').addClass('active').siblings().removeClass('active');
+
+        e.preventDefault();
+
+        let blockOffset = $(href).offset().top;
+
+        $('html, body').animate({
+            scrollTop: blockOffset
+        }, 500);
+    });
 });
 
 /**
