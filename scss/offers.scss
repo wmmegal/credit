@@ -28,32 +28,6 @@
 
         }
 
-        .stickers {
-            position: absolute;
-            left: 1.5rem;
-            top: -.5rem;
-            display: flex;
-            flex-wrap: wrap;
-
-            .sticker {
-                line-height: 1.5rem;
-                border-radius: 0.188rem;
-                color: #FFF;
-                font-size: 0.75rem;
-                font-weight: 500;
-                padding: 0 .5rem;
-
-                &.red {
-                    background-color: #ef2b2b;
-                }
-
-                &.dark {
-                    background: $dark;
-                }
-
-            }
-        }
-
         &-options {
             display: flex;
             flex-wrap: wrap;

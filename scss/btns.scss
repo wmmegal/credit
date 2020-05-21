@@ -24,4 +24,12 @@
             background: #FFF;
         }
     }
+
+    &.btn-yellow-light {
+        background-color: $yellow_light;
+
+        &:hover {
+            background: darken($yellow_light, 10%);
+        }
+    }
 }

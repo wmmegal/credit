@@ -88,6 +88,11 @@
 
             .form-field {
                 margin-bottom: 0;
+
+                input {
+                    color: $dark;
+                    font-weight: 500;
+                }
             }
 
             .select-wrap  {

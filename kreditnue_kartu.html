@@ -75,7 +75,7 @@
             </figure>
         </div>
     </div>
-    <main id="main" class="section offers pb-0">
+    <main id="main" class="section pb-0">
         <div class="container">
             <div id="sort" class="mb-2">
                 <div class="sort-item">
@@ -93,156 +93,64 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                {% for i in range(0, 12)  %}
-                    <div class="col-md-3 mb-2">
-                        <div class="offer border">
-                            <div class="offer-head line">
-                                <a href="#" class="offer-title">Альфа Банк {{ i }}</a>
-                                <div class="offer-desc">
-                                    100 дней без процентов
+            <div class="offers">
+                <div class="row">
+                    {% for i in range(0, 12)  %}
+                        <div class="col-md-3 mb-2">
+                            <div class="offer border">
+                                <div class="offer-head line">
+                                    <a href="#" class="offer-title">Альфа Банк {{ i }}</a>
+                                    <div class="offer-desc">
+                                        100 дней без процентов
+                                    </div>
                                 </div>
-                            </div>
-                            <figure>
-                                <img src="img/img-card.jpg" alt="" class="rounded">
-                            </figure>
-                            <div class="stickers">
-                                {% if i ==0 %}
-                                    <div class="sticker red">
-                                        Бесплатная доставка
-                                    </div>
-                                {% endif %}
-                                {% if i ==1 %}
-                                    <div class="sticker dark">
-                                        Лучшее предложение
-                                    </div>
-                                {% endif %}
-                            </div>
+                                <figure>
+                                    <img src="img/img-card.jpg" alt="" class="rounded">
+                                </figure>
+                                <div class="stickers">
+                                    {% if i ==0 %}
+                                        <div class="sticker red">
+                                            Бесплатная доставка
+                                        </div>
+                                    {% endif %}
+                                    {% if i ==1 %}
+                                        <div class="sticker dark">
+                                            Лучшее предложение
+                                        </div>
+                                    {% endif %}
+                                </div>
 
-                            <div class="offer-options">
-                                <dl>
-                                    <dt>Обслуживание</dt>
-                                    <dd>1 490 ₽ в год</dd>
-                                </dl>
-                                <dl>
-                                    <dt>Льготный период</dt>
-                                    <dd>до 100 дней</dd>
-                                </dl>
-                                <dl>
-                                    <dt>Сумма</dt>
-                                    <dd>до 300 000 ₽</dd>
-                                </dl>
-                                <dl>
-                                    <dt>Ставка</dt>
-                                    <dd>20%</dd>
-                                </dl>
+                                <div class="offer-options">
+                                    <dl>
+                                        <dt>Обслуживание</dt>
+                                        <dd>1 490 ₽ в год</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Льготный период</dt>
+                                        <dd>до 100 дней</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Сумма</dt>
+                                        <dd>до 300 000 ₽</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Ставка</dt>
+                                        <dd>20%</dd>
+                                    </dl>
+                                </div>
+                                <a href="#" class="btn btn-yellow">Подробнее</a>
                             </div>
-                            <a href="#" class="btn btn-yellow">Подробнее</a>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
             {% include 'nav-links.html' %}
         </div>
     </main>
-    <div class="section reviews line">
-        <div class="container relative">
-            <div class="title h1">Последние отзывы</div>
-            <div class="slider-items">
-                {% for j in range(0, 10)  %}
-                    <div>
-                        <div class="review border">
-                            <figure>
-                                <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
-                            </figure>
-                            <div class="review-author">
-                                <span>Инна {{ i }}</span>
-                                <div class="stars" data-rating="3">
-                                    {% include 'stars.html' %}
-                                </div>
-                            </div>
-                            <div class="review-text">
-                                Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
-                                <a href="#" class="link-read-more">Читать далее</a>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-            <a href="#" class="link-all">
-                <span>Все отзывы</span>
-                <svg class="icon-arr-right">
-                    <use xlink:href="img/symbol/sprite.svg#icon-arr-right"></use>
-                </svg>
-            </a>
-        </div>
-    </div>
-    <div class="section line" id="faq">
-        <div class="container">
-            <div class="title h1">Частые вопросы</div>
-            {% for i in range(0, 10) %}
-                <div class="faq">
-                    <div class="question">
-                        Как оставить/написать отзыв на сайте?
-                        <svg class="icon-arr-down">
-                            <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
-                        </svg>
-                    </div>
-                    <div class="answer article">
-                        <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия
-                            между работодателем и специалистом. Данный формат сотрудничества не требует личной
-                            встречи, а обговаривать все детали проекта и оплачивать проделанный труд просто даже
-                            тогда, когда стороны находятся в разных уголках планеты.</p>
-
-                        <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали
-                            вольных наемников в военном деле. Современный freelancer - это профессионал, который
-                            освободился от офисного гнёта и начал трудиться дома или в коворкинге. Причем без
-                            обязательного официального образования. Главное - в совершенстве владеть навыками,
-                            необходимыми для реализации конкретной задачи.</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-    <div class="section line">
-        <div class="container">
-            <div class="title h1">Часто ищут</div>
-            <div class="row">
-                {% for i in range(0, 4)  %}
-                    <div class="col-md-3 mb-2-xl">
-                        <div class="title h5">Кредиты</div>
-                        <ul class="ul-reset list">
-                            <li><a href="#">Без справок о доходах</a></li>
-                            <li><a href="#">В день обращения</a></li>
-                            <li><a href="#">Самые выгодные</a></li>
-                            <li><a href="#">Наличными</a></li>
-                        </ul>
-                        <div class="title h5">Кредиты</div>
-                        <ul class="ul-reset list">
-                            <li><a href="#">Без справок о доходах</a></li>
-                            <li><a href="#">В день обращения</a></li>
-                            <li><a href="#">Самые выгодные</a></li>
-                            <li><a href="#">Наличными</a></li>
-                        </ul>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-    <article class="article section container">
-        <h1 class="title h1">КредитыОнлайн — помогаем в подборе кредита</h1>
-        <p>Одна из основных задач портала КредитыОнлайн — персональный подбор кредитного продукта для конкретного человека. Мы сделали все возможное, чтобы каждый смог сделать лучший выбор:</p>
-        <ul>
-            <li>Проанализировали кредитные предложения всех банков страны, разместили лучшие из них на страницах сайта;</li>
-            <li>Каждое предложение сопровождается подробным описанием: что нужно для получения кредита, требования к заемщикам, документам;</li>
-            <li>Проанализировали кредитные предложения всех банков страны, разместили лучшие из них на страницах сайта;</li>
-            <li>Каждое предложение сопровождается подробным описанием: что нужно для получения кредита, требования к заемщикам, документам;</li>
-            <li>Проанализировали кредитные предложения всех банков страны, разместили лучшие из них на страницах сайта;</li>
-            <li>Каждое предложение сопровождается подробным описанием: что нужно для получения кредита, требования к заемщикам, документам;</li>
-        </ul>
-        <p>Основная задача — сделать так, чтобы посетитель сайта нашел всю необходимую ему информацию на страницах КредитыОнлайн. Чтобы он смог выбрать оптимальный для себя финансовый продукт и сразу обратился онлайн за его предоставлением.</p>
-        <p>Мы — не просто сайт подбора кредитов и не мастер подбора. Мы — кладезь информации для тех, кто интересуется предложениями банка. Не нужно перебирать сайты банков, искать на них точную тарификацию (банки часто ее прячут), все необходимые сведения найдете на страницах КредитыОнлайн.</p>
-    </article>
+    {% include 'reviews-inner.html' %}
+    {% include 'faq.html' %}
+    {% include 'lists.html' %}
+    {% include 'bottom-text.html' %}
     {% include 'footer.html' %}
 </div>
 {% include 'modals.html' %}

@@ -1,0 +1,33 @@
+<div class="section reviews line">
+    <div class="container relative">
+        <div class="title h1">Последние отзывы</div>
+        <div class="slider-items">
+            {% for j in range(0, 10)  %}
+                <div>
+                    <div class="review border">
+                        <figure>
+                            <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                        </figure>
+                        <div class="review-author">
+                            <span>Инна {{ i }}</span>
+                            <div class="stars" data-rating="3">
+                                {% include 'stars.html' %}
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Добрый день! Меня звать Сергей, оформлял кредитную карту 100 дней зарплата с вычетом 13% 24000 мне почему-то не од...
+                            <a href="#" class="link-read-more">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="#" class="link-all">
+            <span>Все отзывы</span>
+            <svg class="icon-arr-right">
+                <use xlink:href="img/symbol/sprite.svg#icon-arr-right"></use>
+            </svg>
+        </a>
+        <a href="#" class="btn btn-yellow all-space">Все отзывы</a>
+    </div>
+</div>

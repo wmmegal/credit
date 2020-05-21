@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>DSGN</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<div id="page">
+    {% include 'header.html' %}
+    <div id="filter">
+        <div class="container relative">
+            <div class="filter-title">Кредитные карты</div>
+            <form id="filter-form" class="filter-form" action="">
+                <label class="form-field mb-1 visible-xl">
+                    <select name="card_type" id="">
+                        <option value="0">Все карты</option>
+                        <option value="1">Для снятия наличных</option>
+                        <option value="2">Кэшбек</option>
+                        <option value="3">Бонусы</option>
+                    </select>
+                </label>
+                <div class="filter-types">
+                    <label>
+                        <input type="radio" name="card_type" value="0" checked>
+                        <span>Все карты</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="card_type" value="1">
+                        <span>Для снятия наличных</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="card_type" value="2">
+                        <span>Кэшбек</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="card_type" value="3">
+                        <span>Бонусы</span>
+                    </label>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-input with-slider">
+                        <label class="form-field">
+                            <span class="label">Какой кредитный лимит вам нужен</span>
+                            <input type="text" name="credit_limit" value="48 000">
+                        </label>
+                        <div class="input-slider" data-min="1000" data-max="100000" data-value="20000"  data-join="₽"></div>
+                    </div>
+                    <div class="filter-input with-slider">
+                        <label class="form-field">
+                            <span class="label">Сколько тратите в месяц </span>
+                            <input type="text" name="spending_per_month" value="Пока незнаю">
+                        </label>
+                        <div class="select-wrap">
+                            <select name="currency" id="">
+                                <option value="₽">₽</option>
+                                <option value="₽">₽</option>
+                            </select>
+                        </div>
+
+                        <div class="input-slider" data-min="500" data-max="50000" data-value="10000" data-join="₽"></div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-yellow">Показать (49)</button>
+                <button type="submit" class="btn-extra-options">
+                    <span>Дополнительные параметры</span>
+                    <svg class="icon-arr-down">
+                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                    </svg>
+                </button>
+            </form>
+            <figure>
+                <img src="img/girl.jpg" alt="" class="object-fit">
+            </figure>
+        </div>
+    </div>
+    <main id="main" class="section pb-0">
+        <div class="container">
+            <div id="sort" class="mb-2">
+                <div class="sort-item">
+                    <span>Сортировать:</span>
+                    <button type="button" class="btn-drop-toggle">
+                        <span>по льготному периоду</span>
+                        <svg class="icon-arr-down">
+                            <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                        </svg>
+                    </button>
+                    <ul class="ul-reset drop-list">
+                        <li><a href="#">Сначала полезные</a></li>
+                        <li><a href="#">Новые</a></li>
+                        <li><a href="#">Проверенные</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offers-list mb-2">
+                {% for i in range(0, 5)  %}
+                    <div class="offer pd-2 border">
+                        <div class="row">
+                            <div class="col-md-3 mb-1-xl">
+                                <div class="offer-title visible-xl">
+                                    <a href="#">Тинькофф Платинум</a>
+                                    <div class="offer-bank">Тинькофф Банк</div>
+                                </div>
+                                <figure>
+                                    <img src="img/img-card-2.jpg" alt="" class="rounded object-fit">
+                                </figure>
+                                <div class="rating justify-content-center">
+                                    <div class="stars" data-rating="3">
+                                        {% include 'stars.html' %}
+                                    </div>
+                                    <a href="#">8 отзывов</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="offer-title hidden-xl">
+                                    <a href="#">Тинькофф Платинум</a>
+                                    <div class="offer-bank">Тинькофф Банк</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row offer-options">
+                                            <div class="col-md-4 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Льготный период
+                                                    </dt>
+                                                    <dd>55 дней</dd>
+                                                </dl>
+                                                <dl class="v-2">
+                                                    <dt>
+                                                        Без процентов, далее
+                                                    </dt>
+                                                    <dd>12% - 29.9%</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Кредитный лимит
+                                                    </dt>
+                                                    <dd>до 300 000 ₽</dd>
+                                                </dl>
+                                                <dl class="v-2">
+                                                    <dt>
+                                                        Лимит на снятие наличных:
+                                                    </dt>
+                                                    <dd> до 600 000 ₽/мес.</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4 mb-1">
+                                                <dl>
+                                                    <dt>
+                                                        Обслуживание
+                                                    </dt>
+                                                    <dd>590 ₽/год</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-yellow">Оставить заявку</button>
+                                        <a href="#" class="btn btn-yellow-light">Подробнее</a>
+                                    </div>
+                                </div>
+                                <button class="btn-offer-details">
+                                    <span>Развернуть</span>
+                                    <svg class="icon-arr-down">
+                                        <use xlink:href="img/symbol/sprite.svg#icon-arr-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="offer-details">
+                            <div class="row justify-content-end">
+                                <div class="col-9">
+                                    <ul class="ul-reset tabs-content">
+                                        <li class="active">Условия</li>
+                                        <li>Снятие наличных</li>
+                                        <li>Лимиты</li>
+                                    </ul>
+                                    <div class="tab-content visible">
+                                        {% for i in range(0, 3)  %}
+                                            <dl>
+                                                <dt>Кредитная ставка на покупки</dt>
+                                                <dd>11.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитная ставка на наличные</dt>
+                                                <dd>23.99% - 29.23%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Кредитный лимит</dt>
+                                                <dd>до 500 000 ₽</dd>
+                                            </dl>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="tab-content">2</div>
+                                    <div class="tab-content">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% include 'nav-links.html' %}
+        </div>
+    </main>
+    {% include 'reviews-inner.html' %}
+    {% include 'faq.html' %}
+    {% include 'lists.html' %}
+    {% include 'bottom-text.html' %}
+    {% include 'footer.html' %}
+</div>
+{% include 'modals.html' %}
+{% include 'scripts.html' %}
+</body>
+</html>
+

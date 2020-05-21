@@ -181,6 +181,13 @@ jQuery(document).ready(function ($) {
 
     });
 
+    $('.tabs-content').on('click', 'li:not(.active)', function () {
+        let $thisTab = $(this).addClass('active').siblings().removeClass('active').closest('.offer-details').find('.tab-content').eq($(this).index());
+
+        $thisTab.fadeIn(150).siblings('.tab-content').hide();
+
+    });
+
 
     /**
      * Селект
@@ -242,6 +249,13 @@ jQuery(document).ready(function ($) {
         $input.on('input', function () {
             $this.slider('value', $(this).val());
         });
+    });
+
+    /**
+     * Детали предложениея
+     */
+    $('.btn-offer-details').on('click',function (e) {
+        $(this).toggleClass('active').closest('.offer').find('.offer-details').slideToggle();
     })
 });
 

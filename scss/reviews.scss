@@ -19,6 +19,7 @@
                 color: $dark;
             }
         }
+
         &-text {
             font-size: 0.875rem;
             line-height: 1.5rem;
@@ -26,6 +27,12 @@
             .link-read-more {
                 color: $dark;
             }
+        }
+    }
+
+    .link-all {
+        @include media-breakpoint('xl') {
+            display: none;
         }
     }
 }
